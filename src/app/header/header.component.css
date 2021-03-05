@@ -1,0 +1,44 @@
+a:hover, a:focus {
+  color: var(--blue);
+}
+
+a {
+  color: var(--white);
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: var(--fz-xxl);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 535px) {
+  a {
+    padding: 10px 20px;
+    font-size: var(--fz-lg);
+  }
+}
+
+@media (max-width: 487px) {
+  a {
+    padding: 10px 20px;
+    font-size: var(--fz-lg);
+  }
+}
+
+@media (max-width: 400px) {
+  a {
+    padding: 10px 17px;
+    font-size: var(--fz-md);
+  }
+}
