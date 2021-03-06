@@ -11,6 +11,14 @@ html, body {
 :root {
   --blue: #43CAF5;
   --white: #FAFAFA;
+  --purple: #9E64FA;
+  --red: #FA7464;
+  --yellow: #FADD64;
+
+  --blue-light: #D1F0FA;
+  --purple-light: #E4D6FA;
+  --red-light: #FAD9D5;
+  --yellow-light: #FAF2D1;
 
   --fz-xxs: 12px;
   --fz-xs: 13px;

@@ -10,6 +10,12 @@
   color: #FAFAFA;
 }
 
+.title {
+  font-weight: 900;
+  color: var(--blue);
+  font-size: clamp(50px, 9vw, 100px);
+}
+
 .header {
   display: flex;
   -webkit-box-pack: justify;
@@ -19,7 +25,6 @@
   position: fixed;
   top: 0px;
   z-index: 11;
-  padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
   backdrop-filter: blur(10px);
@@ -44,20 +49,97 @@
   padding: 0px 150px;
 }
 
+.title-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: fit-content;
+}
+
+.word-alignment {
+  position: relative;
+  bottom: 8%;
+}
+
 .desc {
   line-height: 105%;
   font-size: 2rem;
 }
 
+.circle {
+  animation-duration: 3.8s;
+  position: absolute;
+  top: 8%;
+}
+
+.semicircle {
+  animation-duration: 4.4s;
+  position: absolute;
+  left: 30%;
+  top: 15%;
+}
+
+.lines {
+  animation-duration: 5s;
+  position: absolute;
+  left: 30%;
+  top: 38%;
+}
+
+.floating {
+  animation-name: floating;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }
+}
+
+
+/* MEDIA QUERIES */
 @media (min-width: 1200px) {
   .container {
     max-width: 1600px;
   }
 }
 
+@media (max-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+}
+
 @media (max-width: 1080px) {
   .container {
     padding: 0 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .circle {
+    top: 9vh;
+  }
+
+  .semicircle {
+    left: 80%;
+    top: 9vh;
+    height: 7rem;
+  }
+
+  .lines {
+    left: 78%;
+    top: 0;
+    height: 5rem;
   }
 }
 
@@ -71,15 +153,31 @@
   }
 }
 
-@media (max-width: 400px) {
-  .container {
-    padding: 0 35px;
-  }
-}
-
-
 @media (max-width: 440px) {
   .cta-btn {
     padding: 0.7rem 2rem;
   }
 }
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0 35px;
+  }
+
+  .semicircle {
+    height: 6rem;
+    top: 1rem;
+  }
+
+  .lines {
+    height: 3rem;
+  }
+
+  .circle {
+    height: 2rem;
+    top: 3rem;
+  }
+}
+
+
+
