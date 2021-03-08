@@ -6,6 +6,28 @@
   margin-bottom: 45px;
 }
 
+h1 span {
+  transition: color 2s;
+  transition-delay: 1.5s;
+  cursor: cell;
+}
+
+h1 span:nth-child(1n):hover {
+  color: var(--pink);
+}
+
+h1 span:nth-child(2n):hover {
+  color: var(--gold);
+}
+
+h1 span:nth-child(3n):hover {
+  color: var(--pink-dark);
+}
+
+h1 span:hover {
+  transition: color 0s;
+}
+
 .girlhead {
   width: 70%;
   overflow: hidden;

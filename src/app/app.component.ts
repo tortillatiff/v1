@@ -7,9 +7,7 @@ import * as Feather from 'feather-icons';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tiffany-website';
-
   ngAfterViewInit() {
     Feather.replace();
-}
+  }
 }
