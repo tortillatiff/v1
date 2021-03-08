@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as Feather from 'feather-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tiffany-website';
+
+  ngAfterViewInit() {
+    Feather.replace();
+}
 }
