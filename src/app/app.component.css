@@ -9,7 +9,6 @@
 h1 span {
   transition: color 2s;
   transition-delay: 1.5s;
-  cursor: cell;
 }
 
 h1 span:nth-child(1n):hover {
@@ -35,19 +34,11 @@ h1 span:hover {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0px;
-  z-index: 11;
-  width: 100%;
-  height: var(--nav-height);
-  backdrop-filter: blur(10px);
-  filter: none !important;
-  pointer-events: auto !important;
-  user-select: auto !important;
-  transition: var(--transition);
+  padding-top: 15px;
+  position: relative;
+  z-index: 999;
+  height: 60px;
+  transition: all 0.8s;
 }
 
 .container {

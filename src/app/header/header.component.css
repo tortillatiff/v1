@@ -1,46 +1,24 @@
-a:hover, a:focus {
-  color: var(--blue);
+.navigation-list-item {
+  display: inline-block;
+  margin-right: 30px;
 }
 
-a {
-  color: var(--white);
-  padding: 10px 35px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: var(--fz-xxl);
+.header-homelink {
+  width: 30px;
+  display: block;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
+.container-fluid {
   width: 100%;
-  position: relative;
-  right: 3%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.tabs {
+.row {
   display: flex;
-  justify-content: space-between;
-}
-
-@media (max-width: 535px) {
-  a {
-    padding: 10px 20px;
-    font-size: var(--fz-lg);
-  }
-}
-
-@media (max-width: 487px) {
-  a {
-    padding: 10px 20px;
-    font-size: var(--fz-lg);
-  }
-}
-
-@media (max-width: 400px) {
-  a {
-    padding: 10px 17px;
-    font-size: var(--fz-md);
-  }
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }

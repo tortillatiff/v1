@@ -5,6 +5,7 @@
 html, body {
   font-family: 'DM Sans', sans-serif;
   background-color: #FDF9F7;
+  cursor: none!important;
 }
 
 :root {
@@ -28,5 +29,8 @@ html, body {
   --border-radius: 24px;
   --nav-height: 50px;
 
-  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+::selection {
+  background: var(--pink-light);
 }
