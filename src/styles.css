@@ -6,6 +6,7 @@ html, body {
   font-family: 'DM Sans', sans-serif;
   background-color: #FDF9F7;
   cursor: none!important;
+  color: var(--black);
 }
 
 :root {

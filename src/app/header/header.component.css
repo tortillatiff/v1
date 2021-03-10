@@ -1,6 +1,8 @@
 .navigation-list-item {
   display: inline-block;
   margin-right: 30px;
+  font-weight: bold;
+  color: #356166;
 }
 
 .header-homelink {
