@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, Inject } from '@angular/core';
 import * as Feather from 'feather-icons';
 
 @Component({
@@ -7,7 +7,23 @@ import * as Feather from 'feather-icons';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  opacity;
+
   ngAfterViewInit() {
     Feather.replace();
+  }
+
+  @HostListener("window:scroll", ["$event"])
+  onWindowScroll() {
+    var scrollTop = window.scrollY;
+    var scrollBottom = scrollTop + window.innerHeight;
+    var pageBottom = document.body.scrollHeight;
+    var diff = pageBottom - scrollBottom;
+
+    // var pageWidth = window.innerWidth;
+    // console.log(pageWidth)
+
+    this.opacity = 1 - diff / 300;
+
   }
 }
