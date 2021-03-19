@@ -258,7 +258,7 @@ ul {
   }
 
   .tiffany-pic {
-    width: 90%;
+    max-width: 90%;
   }
 }
 
@@ -293,6 +293,12 @@ ul {
 
   p i {
     width: 17px;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .proj-section {
+    padding-left: 0;
   }
 }
 
