@@ -15,6 +15,10 @@
     transform: scale(1.05);
 }
 
+/* .content:hover > img {
+    transform:translateY(-60px);
+} */
+
 .title {
     font-weight: bold;
     font-size: 2rem;
@@ -27,6 +31,7 @@
 }
 
 img {
+    transition: .3s ease-in-out;
     width: 440px;
     position: relative;
     top: 20px;

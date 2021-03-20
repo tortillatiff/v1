@@ -1,26 +1,35 @@
-.navigation-list-item {
-  display: inline-block;
-  margin-right: 30px;
-  font-weight: bold;
-  color: #356166;
+.nav-item {
+  font-weight: 500;
+  margin-right: 28px;
+  color: #899C9E;
+  transition: .2s linear;
+  font-size: 20px;
 }
 
-.header-homelink {
-  width: 30px;
-  display: block;
+.nav-item:hover {
+  color: #4c595a;
+  font-size: 17px;
 }
 
-.container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+    justify-content: end;
+    text-align: end;
+    z-index: 999;
+    position: absolute;
+    right: 0;
+    top: 101px;
+    background-color: #FDF9F7;
+  }
+  
+  .collapsing {
+    overflow:hidden;
+    justify-content: end;
+    text-align: end;
+    z-index: 999;
+    position: absolute;
+    right: 0;
+    top: 101px;
+    background-color: #FDF9F7;
+  }
 }

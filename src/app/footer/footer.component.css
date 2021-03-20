@@ -17,6 +17,16 @@ p {
     font-size: 1.2rem;
 }
 
+.icon {
+    transition: .2s ease-in-out;
+}
+
+.icon:hover {
+    width: 37px;
+    height: 37px;
+    color: #ffbfbf;
+}
+
 @media screen and (max-width: 991px) {
     h1 {
         font-size: 5rem;
