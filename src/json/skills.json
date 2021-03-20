@@ -1,0 +1,18 @@
+[
+  {
+    "category": "languages",
+    "data": ["Java", "JavaScript", "TypeScript", "HTML", "CSS"]
+  },
+  {
+    "category": "frameworks",
+    "data": ["Angular", "NodeJS", "Flutter"]
+  },
+  {
+    "category": "others",
+    "data": ["git", "Bootstrap", "Postman", "MySQL"]
+  },
+  {
+    "category": "ui/ux",
+    "data": ["Figma", "Wireframing", "Prototyping"]
+  }
+]

@@ -6,13 +6,8 @@
       <figure class="girlhead">
         <img src="../assets/head.gif" alt="Drawing of cute girl" style="display: block; width: 100%; margin: 0 0 -5% 0;">
       </figure>
-
     </div>
-
-
     <div class="col-sm-8 title-section">
-      <!-- <h1 class="title">I’m Tiffany Chan, a design-oriented front-end developer that loves building beautiful interfaces & experiences.</h1> -->
-
       <h1 class="title">
         <span>I</span><span>’</span><span>m </span>
         <span>T</span><span>i</span><span>f</span><span>f</span><span>a</span><span>n</span><span>y </span>
@@ -32,7 +27,6 @@
         <span>i</span><span>n</span><span>t</span><span>e</span> <span>r</span> <span>f</span><span>a</span> <span>c</span><span>e</span><span>s </span><span>& </span>
         <span>e</span><span>x</span><span>p</span><span>e</span> <span>r</span><span>i</span> <span>e</span> <span>n</span><span>c</span><span>e</span><span>s</span><span>.</span>
       </h1>
-
       <p class="getintouch">Get in touch
         <i data-feather="arrow-right"></i>
         <a class="email" href="mailto:nottiffchan@gmail.com">nottiffchan@gmail.com</a>
@@ -59,44 +53,47 @@
   <div class="section-title">&lt;SKILLS&gt;</div>
   <div class="section-content">
     <div class="skill-cols">
-      <div class="skill-cat">
-        <div class="skill-cat-title">languages</div>
+      <div *ngFor="let skillCat of this.skills" class="skill-cat">
+        <div class="skill-cat-title">{{skillCat.category}}</div>
         <ul>
-          <li class="skill-cat-item">Java</li>
-          <li class="skill-cat-item">JavaScript</li>
-          <li class="skill-cat-item">TypeScript</li>
-          <li class="skill-cat-item">HTML</li>
-          <li class="skill-cat-item">CSS</li>
+          <li *ngFor="let skill of skillCat.data" class="skill-cat-item">{{skill}}</li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
 
-      <div class="skill-cat">
-        <div class="skill-cat-title">frameworks</div>
-        <ul>
-          <li class="skill-cat-item">Angular</li>
-          <li class="skill-cat-item">Flutter</li>
-          <li class="skill-cat-item">NodeJS</li>
-        </ul>
-      </div>
+<section id="experience" style="padding-bottom: 0;">
+  <div class="section-title">&lt;EXPERIENCE&gt;</div>
+  <div class="section-content" style="margin-bottom: 50px;">
+    <div *ngFor="let job of this.work" class="job">
+        <div class="job-content">
+          <div class="job-position">{{job.position}}</div>
+          <div class="job-time">{{job.time}}</div>
+        </div>
+        <div class="job-company">
+          <a href="{{job.url}}" target="_blank">{{job.company}}</a>
+        </div>
+    </div>
+  </div>
+</section>
 
-      <div class="skill-cat">
-        <div class="skill-cat-title">other</div>
-        <ul>
-          <li class="skill-cat-item">git</li>
-          <li class="skill-cat-item">Bootstrap</li>
-          <li class="skill-cat-item">Postman</li>
-          <li class="skill-cat-item">MySQL</li>
-        </ul>
-      </div>
+<section id="school" style="margin-bottom: 100px; padding-top: 0;">
+  <div class="section-title">&lt;SCHOOL&gt;</div>
+  <div class="section-content">
+    <div *ngFor="let school of this.school" class="job">
+        <div class="job-content">
+          <div class="job-position" style="white-space: pre-wrap;">{{school.description}}</div>
+          <div class="job-time">{{school.time}}</div>
+        </div>
+        <div class="job-company">
+          <a href="{{school.url}}" target="_blank">{{school.school}}</a>
+        </div>
+    </div>
 
-      <div class="skill-cat">
-        <div class="skill-cat-title">ui/ux</div>
-        <ul>
-          <li class="skill-cat-item">Figma</li>
-          <li class="skill-cat-item">Wireframing</li>
-          <li class="skill-cat-item">Prototyping</li>
-        </ul>
-      </div>
+    <div style="margin-top: 47px;">
+      <a href="#" target="_blank" style="color: #F59393; font-weight: bold; text-decoration: underline;">View My Resume</a>
+      <i style="color: #F59393;" data-feather="arrow-right"></i>
     </div>
   </div>
 </section>
