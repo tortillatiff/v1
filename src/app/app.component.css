@@ -61,7 +61,7 @@ h1 span:hover {
 }
 
 .getintouch {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   color: var(--black);
 }
@@ -111,6 +111,7 @@ section {
   height: auto;
 }
 
+/* SKILLS START */
 .skill-cols {
   display: flex;
   justify-content: space-between;
@@ -128,9 +129,40 @@ ul {
 }
 
 .skill-cat-item {
-  margin: 3px 0;
+  margin: 7px 0;
   font-size: .9rem;
 }
+/* SKILLS END */
+
+
+.job {
+  margin-bottom: 25px;
+}
+
+.job-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-company {
+  font-size: 0.9rem;
+}
+
+.job-company a {
+  text-decoration: none;
+  color: #7c7c7c;
+}
+
+.job-position {
+  font-weight: 700;
+}
+
+.job-time {
+  text-align: left;
+  font-family: var(--font-mono);
+}
+
+
 
 .fade-bg {
   position: fixed;
@@ -181,7 +213,7 @@ ul {
   }
 
   .getintouch {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .section-title {
@@ -230,6 +262,10 @@ ul {
     width: 47%;
     margin-right: 5px;
     margin-bottom: 25px;
+  }
+
+  .job-time {
+    text-align: end;
   }
 }
 
@@ -283,6 +319,15 @@ ul {
 
   .section-content {
     padding-left: 30px;
+  }
+
+  .job-content {
+    display: block;
+  }
+
+  .job-time {
+    margin-bottom: 5px;
+    text-align: left;
   }
 }
 
