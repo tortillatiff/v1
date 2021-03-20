@@ -76,6 +76,10 @@ h1 span:hover {
   color: var(--pink);
 }
 
+/* title section end */
+
+/* body start */
+
 section {
   display: flex;
   justify-content: center;
@@ -101,8 +105,10 @@ section {
 }
 
 .tiffany-pic {
+  align-self: center;
   margin-top: 50px;
-  width: 60%;
+  max-width: 60%;
+  height: auto;
 }
 
 /* SKILLS START */
@@ -157,6 +163,18 @@ ul {
 }
 
 
+
+.fade-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #313B3B; */
+  background-color: #473C3C;
+  z-index: -1;
+  opacity: 0;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 1300px) {
@@ -276,7 +294,7 @@ ul {
   }
 
   .tiffany-pic {
-    width: 90%;
+    max-width: 90%;
   }
 }
 
@@ -320,6 +338,12 @@ ul {
 
   p i {
     width: 17px;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .proj-section {
+    padding-left: 0;
   }
 }
 

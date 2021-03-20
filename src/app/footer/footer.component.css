@@ -1,0 +1,76 @@
+h1, p {
+    color: #ffdac7;
+}
+
+.text {
+    width: 50%;
+}
+
+h1 {
+    font-weight: 700; 
+    font-size: 6rem; 
+    text-align: center;
+}
+
+p {
+    text-align: center; 
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    i {
+        width: 26px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    text {
+        width: 90%;
+    }
+
+    svg {
+        width: 21px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
