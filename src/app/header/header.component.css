@@ -1,14 +1,50 @@
-.nav-item {
+.nav-link {
   font-weight: 500;
-  margin-right: 28px;
+  margin-right: 11px;
+  padding-right: 1rem!important;
+  padding-left: 1rem!important;
   color: #899C9E;
-  transition: .2s linear;
+  transition: .1s linear;
   font-size: 20px;
 }
 
-.nav-item:hover {
-  color: #4c595a;
-  font-size: 17px;
+.nav-link:hover {
+  color: #4d9ba7;
+  /* background-color: #98c9ce21; */
+  /* border-radius: 7px; */
+}
+
+.navbar-brand {
+  opacity: 0;
+  animation: fadein 1s forwards;
+}
+
+.fadedown {
+  opacity: 0;
+  animation: fadedown-enter 1s forwards;
+}
+
+@keyframes fadedown-enter {
+  0% {
+    opacity: 0.01;
+    transform: translateY(-30px);
+    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
+    transition: opacity 300ms var(--easing);
+  }
 }
 
 @media screen and (max-width: 991px) {

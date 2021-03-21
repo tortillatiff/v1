@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import * as Feather from 'feather-icons';
 import * as skills from '../json/skills.json';
 import * as school from '../json/school.json';
@@ -34,5 +34,18 @@ export class AppComponent {
 
     this.opacity = 1 - diff / 300;
 
+
+
+    var sections = document.querySelectorAll(".section");
+
+    for (var i = 0; i < sections.length; i++) {
+      var section = sections[i];      
+
+      if (section.getBoundingClientRect().top + window.pageYOffset < scrollBottom - 50) {
+        section.classList.add('visible');
+      } else {
+        section.classList.remove("visible");
+      }
+    }
   }
 }

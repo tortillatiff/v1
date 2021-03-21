@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -18,4 +18,20 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @HostListener("window:scroll", ["$event"])
+  onWindowScroll() {
+    var scrollTop = window.scrollY;
+    var scrollBottom = scrollTop + window.innerHeight;
+    var projects = document.querySelectorAll(".proj");
+
+    for (var i = 0; i < projects.length; i++) {
+      var proj = projects[i];      
+
+      if (proj.getBoundingClientRect().top + window.pageYOffset < scrollBottom) {
+        proj.classList.add('visible');
+      } else {
+        proj.classList.remove("visible");
+      }
+    }
+  }
 }

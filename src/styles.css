@@ -32,9 +32,8 @@ html {
 
   --font-mono: 'Ubuntu Mono';
 
-  --border-radius: 24px;
-  --nav-height: 50px;
-
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 ::selection {
