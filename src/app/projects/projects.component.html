@@ -1,3 +1,3 @@
 <div *ngFor="let project of projects">
-    <app-proj-card class="proj" [project]="project" (click)="onOpenTab(project.title)"></app-proj-card>
+    <app-proj-card class="proj" [project]="project" [routerLink]="project.path"></app-proj-card>
 </div>

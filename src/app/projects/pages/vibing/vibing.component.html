@@ -1,1 +1,21 @@
-<p>vibing works!</p>
+<app-header [type]="'project'"></app-header>
+
+
+<app-proj-page-title
+    [tags]="[ 'Figma', 'Angular', 'Spotify API' ]"
+    title="vibing."
+    [comingSoon]="false" liveSiteUrl="https://v-ibing.herokuapp.com"
+    repoUrl="https://github.com/nottiffchan/vibing"
+></app-proj-page-title>
+    
+<div class="container">
+    <div class="image"><img src="../../../../assets/projects/vibing-main-gif.gif" alt=""></div>
+    
+    <div class="text-body">
+        <p><span style="font-weight: bold; font-style: italic;">vibing.</span> is a web application that 3 friends and I developed for Hack&Roll 2021, an annual hackathon organized by NUS Hackers. It helps friends, especially ones with different music tastes, generate playlists of songs that they’ll both like.</p>
+    
+        <p>At the time of the project, all of us had very little knowledge of web development and the framworks required and we were tragically unable to bring our app to completion in the hackathon.</p>
+    
+        <p>However, after 2 months and gaining more confidence and understanding in the execution of the front and backend, I returned to <span style="font-weight: bold; font-style: italic;">vibing.</span>, redoing most of the code from scratch (both front and back-end) and improving it to create a fully responsive app which I have hosted on Heroku.</p>
+    </div>
+</div>

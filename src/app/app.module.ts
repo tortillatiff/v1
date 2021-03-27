@@ -10,6 +10,8 @@ import { ProjCardComponent } from './projects/proj-card/proj-card.component';
 import { ProjPageTitleComponent } from './components/proj-page-title/proj-page-title.component';
 import { ProjPageFooterComponent } from './components/proj-page-footer/proj-page-footer.component';
 import { VibingComponent } from './projects/pages/vibing/vibing.component';
+import { LayoutComponent } from './layout/layout.component';
+import { BerryComponent } from './projects/pages/berry/berry.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { VibingComponent } from './projects/pages/vibing/vibing.component';
     ProjCardComponent,
     ProjPageTitleComponent,
     ProjPageFooterComponent,
-    VibingComponent
+    VibingComponent,
+    LayoutComponent,
+    BerryComponent
   ],
   imports: [
     BrowserModule,

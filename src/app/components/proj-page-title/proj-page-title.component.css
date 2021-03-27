@@ -16,8 +16,8 @@
 
 .coming-soon {
     color: var(--grey);
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .tag {
@@ -46,8 +46,7 @@
 @media screen and (max-width: 991px) {
     .container {
       padding: 50px 45px 0 45px;
-    }
-    
+    }   
 }
 
 @media screen and (max-width: 767px) {
@@ -56,6 +55,10 @@
     }
     .title {
         font-size: 50px;
+    }
+
+    .link-btn {
+        margin-left: 0;
     }
 }
 
@@ -72,11 +75,11 @@
     .row {
         width: auto!important;
     }
-    .action-btn {
-        font-size: 16px;
-    }
     .live-site-arrow, .repo-arrow {
         height: 18px;
+    }
+    .buttons {
+        margin: 20px 0;
     }
 }
 

@@ -75,6 +75,12 @@ html {
   transform: scale(1.03);
 }
 
+@media screen and (max-width: 767px) {
+  .my-btn {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .my-btn {
     font-size: 14px;

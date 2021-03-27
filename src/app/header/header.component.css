@@ -8,10 +8,16 @@
   font-size: 20px;
 }
 
-.nav-link:hover {
+.back-to-main {
+  text-decoration: none;
+  color: var(--grey);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover, .back-to-main:hover {
   color: #4d9ba7;
-  /* background-color: #98c9ce21; */
-  /* border-radius: 7px; */
 }
 
 .navbar-brand {
@@ -67,5 +73,14 @@
     right: 0;
     top: 101px;
     background-color: #FDF9F7;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .back-to-main {
+    font-size: 17px;
+  }
+  .back-to-main > svg {
+    height: 20px;
   }
 }
