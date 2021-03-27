@@ -129,8 +129,8 @@ section {
 .section.visible {
   visibility: visible;
   opacity: 1;
-  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  transition: opacity 600ms cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 600ms cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+  transform: translateY(-30px);
+  transition: opacity 500ms cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 600ms cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
 }
 
 .section-title {
@@ -200,11 +200,6 @@ ul {
   color: #7c7c7c;
 }
 
-/* .job-company a:hover {
-  text-decoration: underline;
-  color: #7c7c7c;
-} */
-
 .job-position {
   font-weight: 700;
 }
@@ -213,10 +208,6 @@ ul {
   text-align: left;
   font-family: var(--font-mono);
 }
-
-/* .view-resume:hover {
-  font-size: 18px;
-} */
 
 .view-resume-arrow {
   transition: .3s ease-in-out;

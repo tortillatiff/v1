@@ -1,5 +1,4 @@
 import { Component, HostListener } from '@angular/core';
-import * as Feather from 'feather-icons';
 import * as skills from '../json/skills.json';
 import * as school from '../json/school.json';
 import * as work from '../json/work.json';
@@ -14,12 +13,14 @@ export class AppComponent {
   school:  any  = (school  as  any).default;
   work:  any  = (work  as  any).default;
 
+  currentTab: string = 'vibing.';
+
   ngOnInit() {
   }
   opacity;
 
-  ngAfterViewInit() {
-    Feather.replace();
+  setCurrTab($event) {
+    this.currentTab = $event;
   }
 
   @HostListener("window:scroll", ["$event"])

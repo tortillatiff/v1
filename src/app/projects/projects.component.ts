@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -6,6 +6,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
+  @Output() changeTab = new EventEmitter();
   projects = [
     { bgCol: "#E8BEC5", title: 'the good stuff', desc: 'e-commerce platform with authentication and payment features', imgPath: '../../assets/projects/tgs-thumbnail.png' },
     { bgCol: '#D9E7DA', title: 'vibing.', desc: "created for Hack&Roll 2021: app utilising Spotify's recommendation algorithm to  create personalized playlists", imgPath: '../../assets/projects/vibing-thumbnail.png' },
@@ -16,6 +17,10 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onOpenTab(title) {
+    this.changeTab.emit(title);
   }
 
   @HostListener("window:scroll", ["$event"])

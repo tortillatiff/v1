@@ -1,110 +1,121 @@
-<app-header class="header"></app-header>
-
-<div class="container">
-  <div class="row align-items-center">
-    <div class="img-section col-sm-4 order-sm-2 order-md-2 order-lg-2 order-xl-2 order-xxl-2">
-      <figure class="girlhead fadeIn">
-        <img src="../assets/head.gif" alt="Drawing of cute girl" style="display: block; width: 100%; margin: 0 0 -5% 0;">
-      </figure>
-    </div>
-    <div class="col-sm-8 title-section">
-      <h1 class="title fadeIn" style="animation-delay: 200ms;">
-        <span>I</span><span>’</span><span>m </span>
-        <span>T</span><span>i</span><span>f</span><span>f</span><span>a</span><span>n</span><span>y </span>
-        <span>C</span><span>h</span><span>a</span><span>n</span><span>, </span>
-        <span>a </span>
-        <span>d</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>-</span>
-        <span>o</span><span>r</span><span>i</span>
-        <span>e</span><span>n</span><span>t</span><span>e</span><span>d </span>
-        <span>f</span><span>r</span><span>o</span><span>n</span><span>t</span><span>-</span>
-        <span>e</span><span>n</span><span>d </span>
-        <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span> <span>e</span><span>r </span>
-        <span>t</span><span>h</span><span>a</span><span>t </span>
-        <span>l</span><span>o</span><span>v</span><span>e</span><span>s </span>
-        <span>b</span><span>u</span><span>i</span><span>l</span><span>d</span><span>i</span><span>n</span><span>g </span>
-        <span>b</span><span>e</span> <span>a</span> <span>u</span><span>t</span> <span>i</span> <span>f</span>
-        <span>u</span><span>l </span>
-        <span>i</span><span>n</span><span>t</span><span>e</span> <span>r</span> <span>f</span><span>a</span> <span>c</span><span>e</span><span>s </span><span>& </span>
-        <span>e</span><span>x</span><span>p</span><span>e</span> <span>r</span><span>i</span> <span>e</span> <span>n</span><span>c</span><span>e</span><span>s</span><span>.</span>
-      </h1>
-      <p class="getintouch fadeIn">Get in touch
-        <i data-feather="arrow-right"></i>
-        <a class="email" href="mailto:nottiffchan@gmail.com">nottiffchan@gmail.com</a>
-      </p>
-    </div>
-  </div>
-</div>
-
-<section id="about" class="section">
-  <div class="section-title">&lt;ABOUT&gt;</div>
-  <div class="section-content">
-    <p>I’m currently a front-end developer doing a 6-month internship at <span style="font-weight: bold;">Rescale Lab</span>, a startup.</p>
-    <p>It’s also my 3rd year studying Computer Science with Communications as a minor at the <span style="font-weight: bold;">National University of Singapore</span> (NUS).</p>
-    <p>Knowing how to be creative with the technical constraints definitely gives me a huge advantage. Nothing brings me more satisfaction than being able to translate both my keen eye in design and my technical know-how in building <span style="font-weight: bold;">appealing and engaging applications</span> for users (except maybe coffee. I love coffee). 😍</p>
-
-    <div style="width: 100%; display: flex; justify-content: center;">
-      <img class="tiffany-pic" src="../assets/tiffany.png" alt="tiffany">
-    </div>
-  </div>
-</section>
-
-
-<section id="skills" class="section">
-  <div class="section-title">&lt;SKILLS&gt;</div>
-  <div class="section-content">
-    <div class="skill-cols">
-      <div *ngFor="let skillCat of this.skills" class="skill-cat">
-        <div class="skill-cat-title">{{skillCat.category}}</div>
-        <ul>
-          <li *ngFor="let skill of skillCat.data" class="skill-cat-item">{{skill}}</li>
-        </ul>
+<div *ngIf="currentTab === 'main'">
+  <app-header class="header"></app-header>
+  
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="img-section col-sm-4 order-sm-2 order-md-2 order-lg-2 order-xl-2 order-xxl-2">
+        <figure class="girlhead fadeIn">
+          <img src="../assets/head.gif" alt="Drawing of cute girl" style="display: block; width: 100%; margin: 0 0 -5% 0;">
+        </figure>
+      </div>
+      <div class="col-sm-8 title-section">
+        <h1 class="title fadeIn" style="animation-delay: 200ms;">
+          <span>I</span><span>’</span><span>m </span>
+          <span>T</span><span>i</span><span>f</span><span>f</span><span>a</span><span>n</span><span>y </span>
+          <span>C</span><span>h</span><span>a</span><span>n</span><span>, </span>
+          <span>a </span>
+          <span>d</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>-</span>
+          <span>o</span><span>r</span><span>i</span>
+          <span>e</span><span>n</span><span>t</span><span>e</span><span>d </span>
+          <span>f</span><span>r</span><span>o</span><span>n</span><span>t</span><span>-</span>
+          <span>e</span><span>n</span><span>d </span>
+          <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span> <span>e</span><span>r </span>
+          <span>t</span><span>h</span><span>a</span><span>t </span>
+          <span>l</span><span>o</span><span>v</span><span>e</span><span>s </span>
+          <span>b</span><span>u</span><span>i</span><span>l</span><span>d</span><span>i</span><span>n</span><span>g </span>
+          <span>b</span><span>e</span> <span>a</span> <span>u</span><span>t</span> <span>i</span> <span>f</span>
+          <span>u</span><span>l </span>
+          <span>i</span><span>n</span><span>t</span><span>e</span> <span>r</span> <span>f</span><span>a</span> <span>c</span><span>e</span><span>s </span><span>& </span>
+          <span>e</span><span>x</span><span>p</span><span>e</span> <span>r</span><span>i</span> <span>e</span> <span>n</span><span>c</span><span>e</span><span>s</span><span>.</span>
+        </h1>
+        <p class="getintouch fadeIn">Get in touch
+          <i data-feather="arrow-right"></i>
+          <a class="email" href="mailto:nottiffchan@gmail.com">nottiffchan@gmail.com</a>
+        </p>
       </div>
     </div>
   </div>
-</section>
-
-<section id="experience" class="section" style="padding-bottom: 0;">
-  <div class="section-title">&lt;EXPERIENCE&gt;</div>
-  <div class="section-content" style="margin-bottom: 50px;">
-    <div *ngFor="let job of this.work" class="job">
-        <div class="job-content">
-          <div class="job-position">{{job.position}}</div>
-          <div class="job-time">{{job.time}}</div>
-        </div>
-        <div class="job-company">
-          <a class="underline-grey" href="{{job.url}}" target="_blank">{{job.company}}</a>
-        </div>
+  
+  <section id="about" class="section">
+    <div class="section-title">&lt;ABOUT&gt;</div>
+    <div class="section-content">
+      <p>I’m currently a front-end developer doing a 6-month internship at <span style="font-weight: bold;">Rescale Lab</span>, a startup.</p>
+      <p>It’s also my 3rd year studying Computer Science with Communications as a minor at the <span style="font-weight: bold;">National University of Singapore</span> (NUS).</p>
+      <p>Knowing how to be creative with the technical constraints definitely gives me a huge advantage. Nothing brings me more satisfaction than being able to translate both my keen eye in design and my technical know-how in building <span style="font-weight: bold;">appealing and engaging applications</span> for users (except maybe coffee. I love coffee). 😍</p>
+  
+      <!-- <div style="width: 100%; display: flex; justify-content: center;">
+        <img class="tiffany-pic" src="../assets/tiffany.png" alt="tiffany">
+      </div> -->
     </div>
-  </div>
-</section>
-
-<section id="school" class="section" style="padding-top: 0;">
-  <div class="section-title">&lt;SCHOOL&gt;</div>
-  <div class="section-content">
-    <div *ngFor="let school of this.school" class="job">
-        <div class="job-content">
-          <div class="job-position" style="white-space: pre-wrap;">{{school.description}}</div>
-          <div class="job-time">{{school.time}}</div>
+  </section>
+  
+  
+  <section id="skills" class="section">
+    <div class="section-title">&lt;SKILLS&gt;</div>
+    <div class="section-content">
+      <div class="skill-cols">
+        <div *ngFor="let skillCat of this.skills" class="skill-cat">
+          <div class="skill-cat-title">{{skillCat.category}}</div>
+          <ul>
+            <li *ngFor="let skill of skillCat.data" class="skill-cat-item">{{skill}}</li>
+          </ul>
         </div>
-        <div class="job-company">
-          <a class="underline-grey" href="{{school.url}}" target="_blank">{{school.school}}</a>
-        </div>
+      </div>
     </div>
-
-    <div style="margin-top: 47px;">
-      <a href="../assets/TiffanyChanCV.pdf" target="_blank" style="color: #F59393; font-weight: bold;" class="view-resume underline">View My Resume</a>
-      <i style="color: #F59393;" class="view-resume-arrow" data-feather="arrow-right"></i>
+  </section>
+  
+  <section id="experience" class="section" style="padding-bottom: 0;">
+    <div class="section-title">&lt;EXPERIENCE&gt;</div>
+    <div class="section-content" style="margin-bottom: 50px;">
+      <div *ngFor="let job of this.work" class="job">
+          <div class="job-content">
+            <div class="job-position">{{job.position}}</div>
+            <div class="job-time">{{job.time}}</div>
+          </div>
+          <div class="job-company">
+            <a class="underline-grey" href="{{job.url}}" target="_blank">{{job.company}}</a>
+          </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+  
+  <section id="school" class="section" style="padding-top: 0;">
+    <div class="section-title">&lt;SCHOOL&gt;</div>
+    <div class="section-content">
+      <div *ngFor="let school of this.school" class="job">
+          <div class="job-content">
+            <div class="job-position" style="white-space: pre-wrap;">{{school.description}}</div>
+            <div class="job-time">{{school.time}}</div>
+          </div>
+          <div class="job-company">
+            <a class="underline-grey" href="{{school.url}}" target="_blank">{{school.school}}</a>
+          </div>
+      </div>
+  
+      <div style="margin-top: 47px;">
+        <a href="../assets/TiffanyChanCV.pdf" target="_blank" style="color: #F59393; font-weight: bold;" class="view-resume underline">View My Resume</a>
+        <i style="color: #F59393;" class="view-resume-arrow" data-feather="arrow-right"></i>
+      </div>
+    </div>
+  </section>
+  
+  <section id="projects" class="section">
+    <div class="section-title">&lt;PROJECTS&gt;</div>
+    <div class="section-content proj-section">
+      <app-projects (changeTab)="setCurrTab($event)"></app-projects>
+    </div>
+  </section>
+  
+  <app-footer id="contact"></app-footer>
+  
+  <div class="fade-bg" [ngStyle]="{'opacity': opacity}"></div>
+</div>
 
-<section id="projects" class="section">
-  <div class="section-title">&lt;PROJECTS&gt;</div>
-  <div class="section-content proj-section">
-    <app-projects></app-projects>
-  </div>
-</section>
-
-<app-footer id="contact"></app-footer>
-
-<div class="fade-bg" [ngStyle]="{'opacity': opacity}"></div>
+<div *ngIf="currentTab === 'vibing.'">
+  <app-proj-page-title 
+    [tags]="[ 'Figma', 'Angular', 'Spotify API' ]"
+    title="vibing."
+    comingSoon liveSiteUrl="https://v-ibing.herokuapp.com" 
+    repoUrl="https://github.com/nottiffchan/vibing"
+  ></app-proj-page-title>
+</div>

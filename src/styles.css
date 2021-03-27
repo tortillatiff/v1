@@ -21,6 +21,8 @@ html {
   --pink-light: #F7CDC4;
   --pink-dark: #FA9293;
   --gold: #E69F22;
+  --grey: #8E8D89;
+  --yellow: #F5D5A4;
 
   --fz-xxs: 12px;
   --fz-xs: 13px;
@@ -38,4 +40,43 @@ html {
 
 ::selection {
   background: var(--pink-light);
+}
+
+.my-btn {
+  font-size: 18px;
+  padding: 11px 16px;
+  border-radius: 19px;
+  text-decoration: none!important;
+  color: var(--black)!important;
+  text-align: center;
+  font-weight: 500;
+  justify-content: center;
+  align-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+.pri-btn {
+  background-color: var(--yellow);
+  box-shadow: 0 4px 0 #EBC790;
+}
+
+.pri-btn:hover {
+  background-color: #f9dcb1;
+  transform: scale(1.03);
+}
+
+.sec-btn {
+  background-color: #DADADA;
+  box-shadow: 0 4px 0 #CDCDCD;
+}
+
+.sec-btn:hover {
+  background-color: #E4E4E4;
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 576px) {
+  .my-btn {
+    font-size: 14px;
+  }
 }

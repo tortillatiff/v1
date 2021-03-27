@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjCardComponent } from './projects/proj-card/proj-card.component';
+import { ProjPageTitleComponent } from './components/proj-page-title/proj-page-title.component';
+import { ProjPageFooterComponent } from './components/proj-page-footer/proj-page-footer.component';
+import { VibingComponent } from './projects/pages/vibing/vibing.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { ProjCardComponent } from './projects/proj-card/proj-card.component';
     ProjectsComponent,
     FooterComponent,
     ProjCardComponent,
+    ProjPageTitleComponent,
+    ProjPageFooterComponent,
+    VibingComponent
   ],
   imports: [
     BrowserModule,
