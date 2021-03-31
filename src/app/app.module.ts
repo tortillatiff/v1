@@ -12,6 +12,8 @@ import { ProjPageFooterComponent } from './components/proj-page-footer/proj-page
 import { VibingComponent } from './projects/pages/vibing/vibing.component';
 import { LayoutComponent } from './layout/layout.component';
 import { BerryComponent } from './projects/pages/berry/berry.component';
+import { ThegoodstuffComponent } from './projects/pages/thegoodstuff/thegoodstuff.component';
+import { RescalelabRedesignComponent } from './projects/pages/rescalelab-redesign/rescalelab-redesign.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { BerryComponent } from './projects/pages/berry/berry.component';
     ProjPageFooterComponent,
     VibingComponent,
     LayoutComponent,
-    BerryComponent
+    BerryComponent,
+    ThegoodstuffComponent,
+    RescalelabRedesignComponent
   ],
   imports: [
     BrowserModule,

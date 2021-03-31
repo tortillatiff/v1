@@ -4,7 +4,7 @@
             <h1 class="title mb-2">{{title}}</h1>
             <p *ngIf="comingSoon === true" class="coming-soon mb-0">coming soon</p>
             <div class="d-flex my-2 flex-wrap">
-                <div *ngFor="let tag of tags" class="tag">
+                <div *ngFor="let tag of tags; let i = index" class="tag fadedown" style.animation-delay="{{i * 100}}ms">
                     {{tag}}
                 </div>
             </div>
@@ -14,7 +14,7 @@
             <a *ngIf="liveSiteUrl" [href]="liveSiteUrl" target="_blank" class="my-btn pri-btn mb-2 d-flex align-items-center link-btn">Live Site
                 <i data-feather="arrow-right" width="20" height="20" class="live-site-arrow"></i>
             </a>
-            <a [href]="repoUrl" target="_blank" class="my-btn sec-btn mt-2 d-flex align-items-center link-btn">Repository
+            <a *ngIf="repoUrl" [href]="repoUrl" target="_blank" class="my-btn sec-btn mt-2 d-flex align-items-center link-btn">Repository
                 <i data-feather="arrow-right" width="20" height="20" class="repo-arrow"></i>
             </a>
         </div>

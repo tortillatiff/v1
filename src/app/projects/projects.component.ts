@@ -8,9 +8,9 @@ import { Component, HostListener, OnInit, Output, EventEmitter } from '@angular/
 export class ProjectsComponent implements OnInit {
   @Output() changeTab = new EventEmitter();
   projects = [
-    { bgCol: "#E8BEC5", title: 'the good stuff', desc: 'e-commerce platform with authentication and payment features', imgPath: '../../assets/projects/tgs-thumbnail.png' },
+    { bgCol: "#E8BEC5", title: 'the good stuff', desc: 'e-commerce platform with authentication and payment features', imgPath: '../../assets/projects/tgs-thumbnail.png', path: '/project/thegoodstuff' },
     { bgCol: '#D9E7DA', title: 'vibing.', desc: "created for Hack&Roll 2021: app utilising Spotify's recommendation algorithm to  create personalized playlists", imgPath: '../../assets/projects/vibing-thumbnail.png', path: '/project/vibing' },
-    { bgCol: "#E7D0AB", title: 'redesigning rescalelab', desc: 'self-initiated proposal for a redesign of my company’s website', imgPath: '../../assets/projects/rsl-thumbnail.png' },
+    { bgCol: "#E7D0AB", title: 'redesigning rescalelab', desc: 'self-initiated proposal for a redesign of my company’s website', imgPath: '../../assets/projects/rsl-thumbnail.png', path: '/project/rescalelab-redesign' },
     { bgCol: "#E6C5E8", title: 'berry', desc: 'tile-format shopping list mobile app to ease grocery shopping.', imgPath: '../../assets/projects/berry-thumbnail.png', path: '/project/berry' },
   ]
 

@@ -11,7 +11,9 @@
 
 .title {
     font-weight: bold;
-    font-size: 70px;
+    font-size: 65px;
+    opacity: 0;
+    animation: fadedown-enter-title 0.6s forwards;
 }
 
 .coming-soon {
@@ -28,6 +30,17 @@
     border: 2px solid var(--green);
     padding: 2px 12px;
     margin: 3px 10px 3px 0;
+    transition: .1s ease-in-out;
+}
+
+.pri-btn {
+    opacity: 0;
+    animation: fadeleft-enter 0.9s forwards;
+}
+
+.sec-btn {
+    opacity: 0;
+    animation: fadeleft-enter 1.4s forwards;
 }
 
 .live-site-arrow, .repo-arrow {
@@ -41,6 +54,49 @@
     transform: translateX(10px);
 }
 
+.fadedown {
+    opacity: 0;
+    animation: fadedown-enter 1s forwards;
+}
+
+@keyframes fadedown-enter {
+    0% {
+      opacity: 0.01;
+      transform: translateY(-40px);
+      transition: opacity 400ms var(--easing), transform 400ms var(--easing);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+      transition: opacity 400ms var(--easing), transform 400ms var(--easing);
+    }
+}
+
+@keyframes fadedown-enter-title {
+    0% {
+      opacity: 0.01;
+      transform: translateY(-30px);
+      transition: opacity 200ms var(--easing), transform 200ms var(--easing);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+      transition: opacity 200ms var(--easing), transform 200ms var(--easing);
+    }
+}
+
+@keyframes fadeleft-enter {
+    0% {
+      opacity: 0.01;
+      transform: translateX(40px);
+      transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+      transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+    }
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 991px) {
@@ -72,9 +128,9 @@
     .container {
       padding: 30px 30px 0 30px;
     }
-    .row {
+    /* .row {
         width: auto!important;
-    }
+    } */
     .live-site-arrow, .repo-arrow {
         height: 18px;
     }

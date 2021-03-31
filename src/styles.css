@@ -66,13 +66,37 @@ html {
 }
 
 .sec-btn {
-  background-color: #DADADA;
-  box-shadow: 0 4px 0 #CDCDCD;
+  background-color: #D8E1E2;
+  box-shadow: 0 4px 0 #C8D1D2;
 }
 
 .sec-btn:hover {
-  background-color: #E4E4E4;
+  background-color: #e1ebec;
   transform: scale(1.03);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  width: fit-content;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  background-color: var(--black);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 @media screen and (max-width: 767px) {

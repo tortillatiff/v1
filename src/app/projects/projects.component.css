@@ -1,0 +1,21 @@
+.proj-footer {
+    min-height: 210px;
+    /* background-color: #E4D6FA; */
+    overflow: hidden;
+    margin: 0;
+}
+
+.proj-footer .footer-thumbnail {
+    width: 80%!important;
+    position: absolute;
+    margin-top: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.proj-footer:hover .footer-thumbnail {
+    transform: scale(1.03);
+}
+
+.hover-underline-animation {
+    color: var(--black);
+}
