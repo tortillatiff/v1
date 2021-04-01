@@ -1,25 +1,27 @@
-<nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href=''>
-    <img *ngIf="type === 'main'" style="height: 60px;" src="../../assets/head_static.png" alt="">
-    <a class="back-to-main" *ngIf="type === 'project'" href="/#projects">
-      <i data-feather="arrow-left" style="margin-right: 8px;"></i>
-      Back to main
-    </a>
+<nav class="navbar navbar-expand-lg d-flex justify-content-center justify-content-sm-between" [ngStyle]="type === 'main' && {'opacity': opacity}">
+  <a *ngIf="type === 'main'" class="d-none d-sm-block navbar-brand" href=''>
+    <img style="height: 60px;" src="../../assets/logo.svg" alt="">
   </a>
-  <button class="navbar-toggler pull-left" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+  
+  <div class="navbar-nav" style="flex-direction: row;">
+    <a *ngIf="type === 'project'" class="nav-link fadedown" href="/#projects">Home</a>
+    <a class="nav-link fadedown" href="../assets/TiffanyChanCV.pdf" target="_blank">Resume</a>
+    <a class="nav-link fadedown" style="animation-delay: 200ms;" href="#contact">Contact</a>
+
+  </div>
+
+  <!-- rip hamburger menu -->
+  <!-- <button class="navbar-toggler pull-left" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span>
       <img src="../../assets/menu-toggle.svg" alt="">
     </span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  </button> -->
+  <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="mr-auto"></div>
     <div class="navbar-nav">
-      <!-- <a class="nav-item nav-link" href="#about">About <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Experience</a>
-      <a class="nav-item nav-link" href="#projects">Projects</a> -->
       <a class="nav-item nav-link fadedown" href="../assets/TiffanyChanCV.pdf" target="_blank">Resume</a>
       <a class="nav-item nav-link fadedown" style="animation-delay: 200ms;" href="#contact">Contact</a>
-
     </div>
-  </div>
+  </div> -->
 </nav>
