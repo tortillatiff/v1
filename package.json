@@ -1,8 +1,11 @@
 {
   "name": "tiffany-website",
+  "homepage": "https://nottiffchan.github.io/",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
@@ -33,6 +36,7 @@
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
+    "gh-pages": "^3.1.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.2.0",
