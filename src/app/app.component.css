@@ -1,0 +1,40 @@
+.cursor-child {
+    width: 7px;
+    height: 7px;
+    /* background-color: #f59393; */
+    background-color: #E69F22;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99999;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cursor {
+    z-index: 99999;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 3px solid #F59393;
+    border-radius: 50%;
+    transition: 30ms ease-in-out;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cursor-grow {
+    transform: scale(1.2);
+  }
+  
+  .cursor-project-hover {
+    background: url('../assets/images/cursor_openproj.svg') no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    border: transparent 0.1px solid;
+  }
+  
+  .cursor-child-remove {
+    display: none;
+  }

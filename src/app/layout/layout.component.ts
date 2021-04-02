@@ -13,10 +13,52 @@ export class LayoutComponent implements OnInit {
   school:  any  = (school  as  any).default;
   work:  any  = (work  as  any).default;
 
+  opacity;
+  
+
   ngOnInit() {
+    // let cursor = document.querySelector('.cursor');
+    // let cursorChild = document.querySelector('.cursor-child');
+
+    // document.addEventListener('mousemove', e => {
+    //   let y = e.pageY;
+    //   let x = e.pageX;
+    //   cursor.setAttribute("style", "top: "+(y)+"px; left: "+(x)+"px;");
+    //   cursorChild.setAttribute("style", "top: "+(y)+"px; left: "+(x)+"px;")
+    // })
+    
+    // document.addEventListener('click', () => {
+    //   cursor.classList.add("cursor-grow");
+    //   setTimeout(() => {
+    //     cursor.classList.remove("cursor-grow");
+    //   }, 100)
+
+    //   cursorChild.classList.add("cursor-grow");
+    //   setTimeout(() => {
+    //       cursorChild.classList.remove("cursor-grow");
+    //   }, 100)
+    // })
+
+    // cursor hover
+    // let navlinks = document.querySelectorAll('.nav-link');
+    // navlinks.forEach(link => {
+    //   link.addEventListener('mouseover', () => {
+    //     cursor.classList.add("cursor-grow");
+    //   });
+    //   link.addEventListener('mouseleave', () => {
+    //     cursor.classList.remove("cursor-grow"); 
+    //   })
+    // })
   }
 
-  opacity;
+  enterProjCursor() {
+    document.querySelector('.cursor').classList.add("cursor-project-hover");
+    document.querySelector('.cursor-child').classList.add("cursor-child-remove");
+  }
+  exitProjCursor() {
+    document.querySelector('.cursor').classList.remove("cursor-project-hover");
+    document.querySelector('.cursor-child').classList.remove("cursor-child-remove");
+  }
 
   @HostListener("window:scroll", ["$event"])
   onWindowScroll() {

@@ -11,8 +11,9 @@
   padding-right: 1rem!important;
   padding-left: 1rem!important;
   color: #899C9E;
-  transition: .1s linear;
+  transition: .2s ease-in-out;
   font-size: 20px;
+  cursor: none;
 }
 
 .back-to-main {
@@ -25,6 +26,7 @@
 
 .nav-link:hover, .back-to-main:hover {
   color: #4d9ba7;
+  font-size: 21px;
 }
 
 .navbar-brand {

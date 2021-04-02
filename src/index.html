@@ -3,32 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Tiffany Chan</title>
-
-  <!-- <style>
-    body {
-      /* cursor: none; */
-    }
-
-    .cursor-child {
-        width: 5px;
-        height: 5px;
-        background-color: #f59393;
-        border-radius: 50%;
-        position: absolute;
-        z-index: 99999;
-    }
-
-    .cursor {
-        z-index: 99999;
-        content: "";
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        border: 3px solid #F59393;
-        border-radius: 50%;
-        transition: .1s linear;
-    }
-  </style> -->
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image" href="./assets/head-svg.svg">
@@ -36,45 +10,15 @@
 <body>
   <app-root></app-root>
 </body>
-  <!-- <div class="cursor"></div>
-  <div class="cursor-child"></div> -->
-  <!-- <cursor class="cursor" id="cursor"></cursor>
-  <cursor class="cursor-child" id="cursor-child"></cursor> -->
-
-  <!-- <script src="/node_modules/kursor/dist/kursor.js"></script> -->
-  <script src="https://unpkg.com/kursor"></script>
+  <!-- <script src="https://unpkg.com/kursor"></script>
   <script>
       var kursorx = new kursor({
           type: 1,
           color: '#FA9293',
           removeDefaultCursor: true
       })
-  </script>
-  <!-- <script>
-    const cursor = document.querySelector('.cursor');
-    const cursorChild = document.querySelector('.cursor-child');
-
-    document.addEventListener('mousemove', e => {
-      let y = e.pageY;
-      let x = e.pageX;
-      cursor.setAttribute("style", "top: "+(y - 10)+"px; left: "+(x - 10)+"px;");
-      cursorChild.setAttribute("style", "top: "+(y)+"px; left: "+(x)+"px;")
-      
-    })
-
-    document.addEventListener('click', () => {
-      cursor.classList.add("expand");
-      setTimeout(() => {
-        cursor.classList.remove("expand");
-      }, 500)
-
-      cursorChild.classList.add("expand");
-      setTimeout(() => {
-          cursorChild.classList.remove("expand");
-      }, 500)
-    })
   </script> -->
-
+  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

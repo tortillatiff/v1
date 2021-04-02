@@ -1,3 +1,10 @@
 <div *ngFor="let project of projects">
-    <app-proj-card class="proj" [project]="project" [routerLink]="project.path"></app-proj-card>
+    <app-proj-card 
+        (mouseenter)="mouseEnter()" 
+        (mouseleave)="mouseLeave()"  
+        (click)="openProj()"
+        class="proj" 
+        [project]="project" 
+        [routerLink]="project.path">
+    </app-proj-card>
 </div>

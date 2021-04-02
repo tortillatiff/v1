@@ -1,3 +1,6 @@
+<!-- <div class="cursor" id="cursor"></div>
+<div class="cursor-child" id="cursor-child"></div> -->
+
 <app-header id="header" [type]="'main'"></app-header>
 
 <div class="container">
@@ -91,7 +94,7 @@
           </div>
       </div>
   
-      <div style="margin-top: 47px;">
+      <div style="margin-top: 47px; cursor: none;">
         <a href="../assets/TiffanyChanCV.pdf" target="_blank" style="color: #F59393; font-weight: bold;" class="view-resume underline">View My Resume</a>
         <i style="color: #F59393;" class="view-resume-arrow" data-feather="arrow-right"></i>
       </div>
@@ -101,7 +104,7 @@
 <section id="projects" class="section">
     <div class="section-title">&lt;PROJECTS&gt;</div>
     <div class="section-content proj-section">
-      <app-projects></app-projects>
+      <app-projects (enterProjCursor)="enterProjCursor()" (exitProjCursor)="exitProjCursor()" (openProjCursor)="exitProjCursor()"></app-projects>
     </div>
 </section>
 
