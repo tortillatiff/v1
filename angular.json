@@ -27,7 +27,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/kursor/dist/kursor.css",
               "src/styles.css"
             ],
             "scripts": [
