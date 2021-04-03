@@ -6,8 +6,11 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent { 
+  public windowWidth;
 
   ngOnInit() {
+    this.windowWidth = window.innerWidth;
+    console.log("window wifht", this.windowWidth)
     let cursor = document.querySelector('.cursor');
     let cursorChild = document.querySelector('.cursor-child');
 
