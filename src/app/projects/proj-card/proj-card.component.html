@@ -1,9 +1,7 @@
-<div class="card-wrap d-flex flex-column align-items-center mb-5" [style.backgroundColor]="project.bgCol">
-    <div class="content" id="content">
-        <div>
-            <h4 class="title">{{project.title}}</h4>
-            <p class="subtitle">{{project.desc}}</p>
-        </div>
-        <img [src]=project.imgPath alt="">
+<div class="card mt-4" [ngClass]="index % 2 == 1 ? 'mt-lg-5' : 'mt-lg-0' " [style.backgroundColor]="project.bgCol">
+    <div class="proj-card-title">
+        <h3 class="mb-2 text-center">{{ project.title }}</h3>
+        <p class="text-center">{{ project.desc }}</p>
     </div>
+    <img [src]="project.imgPath" class="w-100" alt="mockup">
 </div>

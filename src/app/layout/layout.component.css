@@ -1,6 +1,6 @@
 .title {
   font-weight: bold;
-  color: var(--green);
+  color: var(--purple);
   line-height: 120%;
   font-size: 4vw;
   margin-bottom: 45px;
@@ -46,6 +46,10 @@ h1 span:hover {
   margin-left: auto;
 }
 
+.a-button {
+  width: 100%;
+}
+
 .title-section {
   display: flex;
   flex-direction: column;
@@ -63,7 +67,7 @@ h1 span:hover {
 }
 
 .email {
-  color: var(--green);
+  color: var(--purple);
   text-decoration: underline;
   margin-left: 13px;
 }
@@ -78,6 +82,27 @@ h1 span:hover {
   margin: 0;
   animation-delay: 0.4s!important;
 }
+
+.wave-divider { 
+  width: 100%;
+  position: relative;
+  height: 28px;
+  animation: 10s wave linear infinite;
+}
+.purple-wave {
+  background: url(../../assets/wave.svg) repeat-x 0%;
+  background-size: contain;
+}
+.green-wave {
+  background: url(../../assets/greenwave.svg) repeat-x 0%;
+  background-size: contain;
+}
+.pink-wave {
+  background: url(../../assets/pinkwave.svg) repeat-x 0%;
+  background-size: contain;
+}
+
+@keyframes wave{0%{background-position:0 0}100%{background-position:100% 0}}
 
 @keyframes topFadeOut {
   0% {
@@ -112,12 +137,13 @@ h1 span:hover {
 .scroll {
   position: absolute;
   padding-top: 25px;
+  font-weight: 600;
   bottom: -10px;
   left: 50%;
   z-index: 2;
   display: inline-block;
   transform: translate(0, -50%);
-  color: #5F3962;
+  color: var(--purple);
   text-decoration: none;
   transition: opacity .3s;
 }
@@ -160,7 +186,8 @@ h1 span:hover {
 section {
   display: flex;
   justify-content: center;
-  padding: 100px 170px;
+  min-height: 100vh;
+  /* padding: 100px 170px; */
 }
 
 .section {
@@ -202,6 +229,13 @@ section {
 }
 
 /* SKILLS START */
+
+.card {
+  background-color: transparent;
+  border: 4px solid var(--purple);
+  border-radius: var(--br-lg);
+  padding: 40px;
+}
 
 .skill-cols {
   display: flex;
@@ -257,6 +291,10 @@ ul {
   transition: .3s ease-in-out;
 }
 
+a {
+  color: var(--black);
+}
+
 .underline:hover+.view-resume-arrow {
   transform: translateX(10px);
 }
@@ -276,7 +314,7 @@ ul {
   width: 0;
   bottom: -4px;
   background: #F59393;
-  height: 2px;
+  height: 3px;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
@@ -303,7 +341,7 @@ ul {
   width: 0;
   bottom: -2.5px;
   background: #7c7c7c;
-  height: 1.1px;
+  height: 2px;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
@@ -404,6 +442,16 @@ ul {
   }
   .job-time {
     text-align: end;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .card {
+    padding: 60px;
+  }
+
+  .a-button {
+    width: auto;
   }
 }
 

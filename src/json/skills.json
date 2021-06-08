@@ -1,18 +1,10 @@
 [
   {
-    "category": "languages",
-    "data": ["Java", "JavaScript", "TypeScript", "HTML", "CSS"]
+    "category": "Development",
+    "data": ["HTML/CSS", "Angular", "NodeJS", "MySQL", "Flutter", "Javascript", "Typescript", "Java", "git", "Bootstrap"]
   },
   {
-    "category": "frameworks",
-    "data": ["Angular", "NodeJS", "Flutter"]
-  },
-  {
-    "category": "others",
-    "data": ["git", "Bootstrap", "Postman", "MySQL"]
-  },
-  {
-    "category": "ui/ux",
-    "data": ["Figma", "Wireframing", "Prototyping"]
+    "category": "Design",
+    "data": ["UI/UX Design", "Figma", "Prototyping", "Visual Design", "Wireframing"]
   }
 ]
