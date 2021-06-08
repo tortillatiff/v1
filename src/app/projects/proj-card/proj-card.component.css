@@ -1,150 +1,49 @@
-.card-wrap.visible {
-    visibility: visible;
-    opacity: 1;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transition: opacity 600ms cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 600ms cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
-}
-
-.card-wrap {
-    border-radius: 12px;
-    height: 334px;
-    width: 548px;
-    padding: 30px 25px 0 25px;
-    text-align: center;
-    overflow-y: hidden;
-    transition: 350ms ease;
+.card {
+    border: 4px solid var(--purple);
+    border-radius: var(--br-lg);
+    background-color: #F8EBEB;
+    max-height: 510px;
+    overflow: hidden;
 
     visibility: visible;
     opacity: 0;
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 20, 0, 1);
 }
 
-.card-wrap:hover {
-    transform: scale(1.03);
+.card.visible {
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 600ms cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 600ms cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
 }
 
-.content {
-    transition: transform .5s;
+.proj-card-title {
+    padding: 60px 30px;
 }
 
-.card-wrap:hover img {
-    /* transform: scale(1.07); */
-    transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-}
-
-.title {
-    font-weight: bold; 
-    font-size: 2rem;
-    color: #1A3033;
-    text-align: center; 
-}
-
-.subtitle {
-    color: #37494B;
-}
-
-img {
+.card img {
+    padding: 0 1rem 3rem 1rem;
     transition: .3s ease-in-out;
-    width: 440px;
-    position: relative;
-    top: 20px;
 }
 
-@media screen and (max-width: 800px) {
-    .card-wrap {
-        height: 250.5px;
-        width: 411px;
-        padding: 22.5px 19px 0 19px;
-    }
-
-    .title {
-        font-size: 1.5rem;
-    }
-
-    .subtitle {
-        font-size: .75rem;
-    }
-
-    img {
-        width: 350px;
-    }
+.card:hover {
+    transform: scale(0.95);
 }
 
-@media screen and (max-width: 767px) {
-    .card-wrap {
-        height: 334px;
-        width: 548px;
-        padding: 30px 25px 0 25px;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-    
-    .subtitle {
-        font-size: 1rem;
-    }
-    
-    img {
-        width: 440px;
-    }
+.card:hover img {
+    transform: scale(1.05);
 }
 
-@media screen and (max-width: 680px) {
-    .card-wrap {
-        height: 250.5px;
-        width: 411px;
-        padding: 22.5px 19px 0 19px;
+@media screen and (min-width: 756px) {
+    .proj-card-title {
+        padding: 80px 50px 100px 50px;
     }
 
-    .title {
-        font-size: 1.5rem;
+    .card {
+        max-height: 697px;
     }
 
-    .subtitle {
-        font-size: .75rem;
-    }
-
-    img {
-        width: 350px;
-    }
-}
-
-@media screen and (max-width: 535px) {
-    .card-wrap {
-        height: 250px;
-        width: 350px;
-        padding: 20px 20px 0 20px;
-    }
-
-    img {
-        width: 330px;
-        margin-top: -18px;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .card-wrap {
-        height: 260px;
-        width: 310px;
-        padding-top: 25px;
-    }
-
-    img {
-        width: 265px;
-        margin-top: -10px;
-    }
-}
-
-@media screen and (max-width: 370px) {
-    .card-wrap {
-        width: 260px;
-        height: 218px;
-    }
-
-    img {
-        width: 230px;
-        margin-top: -26px;
+    .card img {
+        padding: 0 1.5rem 100px 1.5rem;
     }
 }

@@ -1,10 +1,13 @@
-<div *ngFor="let project of projects">
-    <app-proj-card 
-        (mouseenter)="mouseEnter()" 
-        (mouseleave)="mouseLeave()"  
-        (click)="openProj()"
-        class="proj" 
-        [project]="project" 
-        [routerLink]="project.path">
-    </app-proj-card>
+<div class="row">
+    <div *ngFor="let project of projects; let i = index" class="col-lg-6">
+        <app-proj-card 
+            (mouseenter)="mouseEnter()" 
+            (mouseleave)="mouseLeave()"  
+            (click)="openProj()"
+            class="proj" 
+            [project]="project" 
+            [index]="i"
+            [routerLink]="project.path">
+        </app-proj-card>
+    </div>
 </div>

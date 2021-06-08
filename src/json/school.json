@@ -1,14 +1,14 @@
 [
   {
-    "school": "Asia University (Taichung, Taiwan)",
+    "school": "Asia University",
     "url": "https://www.asia.edu.tw/en/",
-    "time": "July ‘19",
+    "time": "July 2019",
     "description": "Artificial Intelligence Program"
   },
   {
     "school": "National University of Singapore",
     "url": "https://www.nus.edu.sg/",
-    "time": "Aug ‘18 - Present",
-    "description": "Computer Science (Hons.),\nCommunications and New Media (Minor)"
+    "time": "Aug 2018 - Present",
+    "description": "BComp (Hons)  •  Computer Science "
   }
 ]

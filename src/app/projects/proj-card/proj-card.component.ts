@@ -7,6 +7,7 @@ import { Component, HostListener, Input, OnInit } from '@angular/core';
 })
 export class ProjCardComponent implements OnInit {
   @Input() project;
+  @Input() index;
 
   contentStyle;
 
@@ -20,7 +21,7 @@ export class ProjCardComponent implements OnInit {
     var scrollTop = window.scrollY;
     var scrollBottom = scrollTop + window.innerHeight;
 
-    var cards = document.querySelectorAll(".card-wrap");
+    var cards = document.querySelectorAll(".card");
 
     for (var i = 0; i < cards.length; i++) {
       var card = cards[i];

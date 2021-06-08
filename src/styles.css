@@ -3,11 +3,15 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-  font-family: 'DM Sans', sans-serif;
-  background-color: #FDF9F7;
+  font-family: var(--font-serif);
+  background-color: var(--bg-color);
+  font-size: var(--text-body);
   cursor: none!important;
   color: var(--black);
   overflow-x: hidden;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 html {
@@ -17,21 +21,26 @@ html {
 :root {
   --green: #4C8E96;
   --black: #313B3B;
+  --purple: #5F3962;
   --pink: #F59393;
   --pink-light: #F7CDC4;
   --pink-dark: #FA9293;
   --gold: #E69F22;
   --grey: #8E8D89;
   --yellow: #F5D5A4;
+  --bg-color: #FDF9F7;
 
-  --fz-xxs: 12px;
-  --fz-xs: 13px;
-  --fz-sm: 14px;
-  --fz-md: 16px;
-  --fz-lg: 18px;
-  --fz-xl: 20px;
-  --fz-xxl: 22px;
+  --text-xs: 18px;
+  --text-body: 22px;
+  --text-h3: 32px;
+  --text-h2: 48px;
+  --text-h1: 54px; 
 
+  --br-lg: 30px;
+  --br-md: 20px;
+  --br-sm: 10px;
+
+  --font-serif: 'DM Sans', sans-serif;
   --font-mono: 'Ubuntu Mono';
 
   --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -41,6 +50,60 @@ html {
 ::selection {
   background: var(--pink-light);
 }
+
+.purple-font {
+  color: var(--purple);
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+}
+h3, .text-h3 {
+  font-size: var(--text-h3);
+}
+h2, .text-h2 {
+  font-size: var(--text-h2);
+}
+h1, .text-h1 {
+  font-size: var(--text-h1);
+}
+
+
+.tiff-btn {
+  font-weight: bold;
+  border-radius: var(--br-sm);
+  padding: 12px 28px;
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-pri {
+  background-color: var(--purple);
+  color: white;
+  box-shadow: 2px 3px #896C8B;
+}
+
+.btn-pri:hover {
+  background-color: #896C8B;
+  box-shadow: none;
+}
+
+.btn-sec {
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  box-shadow: 2px 3px var(--purple);
+  background-color: var(--bg-color);
+}
+
+.btn-sec:hover {
+  box-shadow: none;
+  background-color: var(--purple);
+  color: white;
+}
+
+
+
+
 
 .my-btn {
   font-size: 18px;
@@ -106,8 +169,8 @@ html {
   }
 }
 
-@media screen and (max-width: 576px) {
-  .my-btn {
-    font-size: 14px;
+@media screen and (min-width: 576px) {
+  .tiff-btn {
+    width: auto;
   }
 }
