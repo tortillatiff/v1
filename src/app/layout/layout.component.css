@@ -36,7 +36,7 @@ h1 span:hover {
 }
 
 .container {
-  padding: 0 0 100px 100px;
+  padding-bottom: 100px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -59,7 +59,6 @@ h1 span:hover {
 }
 
 .getintouch {
-  font-size: 20px;
   font-weight: bold;
   color: var(--black);
   cursor: none;
@@ -69,7 +68,6 @@ h1 span:hover {
 .email {
   color: var(--purple);
   text-decoration: underline;
-  margin-left: 13px;
 }
 
 .email:hover {
@@ -77,7 +75,6 @@ h1 span:hover {
 }
 
 .girlhead {
-  width: 70%;
   overflow: hidden;
   margin: 0;
   animation-delay: 0.4s!important;
@@ -203,31 +200,6 @@ section {
   transition: opacity 500ms cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 600ms cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
 }
 
-.section-title {
-  flex-shrink: 0;
-  width: 200px;
-  margin-right: 70px;
-  color: var(--green);
-  text-transform: uppercase;
-  text-align: right;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.section-content {
-  font-weight: 300;
-  font-size: 1rem;
-  width: 100%;
-  max-width: 650px;
-}
-
-.tiffany-pic {
-  align-self: center;
-  margin-top: 50px;
-  max-width: 60%;
-  height: auto;
-}
-
 /* SKILLS START */
 
 .card {
@@ -237,93 +209,10 @@ section {
   padding: 40px;
 }
 
-.skill-cols {
-  display: flex;
-  justify-content: space-between;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skill-cat-title {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.skill-cat-item {
-  margin: 7px 0;
-  font-size: .9rem;
-}
-
 /* SKILLS END */
-
-.job {
-  margin-bottom: 25px;
-}
-
-.job-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.job-company {
-  font-size: 0.9rem;
-}
-
-.job-company a {
-  text-decoration: none;
-  color: #7c7c7c;
-}
-
-.job-position {
-  font-weight: 700;
-}
-
-.job-time {
-  text-align: left;
-  font-family: var(--font-mono);
-}
-
-.view-resume-arrow {
-  transition: .3s ease-in-out;
-}
 
 a {
   color: var(--black);
-}
-
-.underline:hover+.view-resume-arrow {
-  transform: translateX(10px);
-}
-
-.underline {
-  display: inline;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-}
-
-.underline:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  width: 0;
-  bottom: -4px;
-  background: #F59393;
-  height: 3px;
-  transition-property: width;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-
-.underline:hover:after, .underline:focus:after, .underline:active:after {
-  left: 0;
-  right: auto;
-  width: 100%;
 }
 
 .underline-grey {
@@ -359,7 +248,6 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: #313B3B; */
   background-color: #473C3C;
   z-index: -1;
   opacity: 0;
@@ -381,9 +269,6 @@ a {
   section {
     padding: 50px;
   }
-  .section-title {
-    margin-right: 50px;
-  }
 }
 
 @media screen and (max-width: 991px) {
@@ -393,16 +278,6 @@ a {
   .title {
     font-size: 4.7vw;
   }
-  .girlhead {
-    width: 90%;
-    margin-bottom: 8%;
-  }
-  .getintouch {
-    font-size: 19px;
-  }
-  .section-title {
-    width: 150px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -410,38 +285,14 @@ a {
     padding: 0px 24px 0 40px;
   }
   .title {
-    font-size: 5vw;
+    font-size: 2.1rem;
   }
   .girlhead {
-    margin-bottom: 50%;
+    width: 40%;
+    margin-bottom: 8%;
   }
   .getintouch {
     font-size: 15px;
-  }
-  section {
-    display: block;
-  }
-  .section-title {
-    text-align: left;
-    width: auto;
-  }
-  .section-content {
-    padding-top: 30px;
-    padding-left: 50px;
-  }
-}
-
-@media screen and (max-width: 630px) {
-  .skill-cols {
-    flex-wrap: wrap;
-  }
-  .skill-cat {
-    width: 47%;
-    margin-right: 5px;
-    margin-bottom: 25px;
-  }
-  .job-time {
-    text-align: end;
   }
 }
 
@@ -470,13 +321,6 @@ a {
     margin-right: auto;
     margin-left: auto;
   }
-  .img-section {
-    display: flex;
-    justify-content: center;
-  }
-  .tiffany-pic {
-    max-width: 90%;
-  }
 }
 
 @media screen and (max-width: 479px) {
@@ -493,39 +337,5 @@ a {
   }
   section {
     padding: 50px 35px;
-  }
-  .section-content {
-    padding-left: 30px;
-  }
-  .job-content {
-    display: block;
-  }
-  .job-time {
-    margin-bottom: 5px;
-    text-align: left;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .getintouch {
-    font-size: 14px;
-  }
-  p i {
-    width: 17px;
-  }
-}
-
-@media screen and (max-width: 392px) {
-  .proj-section {
-    padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 333px) {
-  .feather-arrow-right {
-    margin-right: 13px;
-  }
-  .email {
-    margin-left: 0;
   }
 }
