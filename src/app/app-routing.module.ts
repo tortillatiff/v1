@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: 'project/vibing', component: VibingComponent },
   { path: 'project/berry', component: BerryComponent },
   { path: 'project/rescalelab-redesign', component: RescalelabRedesignComponent },
-  { path: 'project/thegoodstuff', component: ThegoodstuffComponent }
+  { path: 'project/thegoodstuff', component: ThegoodstuffComponent },
+  { path: '**', component: LayoutComponent }
 ];
 
 @NgModule({
