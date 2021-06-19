@@ -1,0 +1,15 @@
+.btn-arrow {
+    margin-left: 5px;
+    transition: ease-in-out 0.4s;
+}
+.tiff-btn:hover .btn-arrow {
+    transform: translateX(10px);
+}
+
+p, li {
+    font-size: var(--text-xs);
+}
+
+li {
+    margin: 18px 0;
+}

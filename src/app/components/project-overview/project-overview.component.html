@@ -1,0 +1,39 @@
+<h1 style="color: var(--purple); text-align: center; margin-bottom: 80px; margin-top: 200px;">Project Overview</h1>
+
+<div class="row m-0">
+    <div class="col-md-9">
+        <ng-container *ngIf="background">
+            <h3>Background</h3>
+            <p *ngFor="let bgPara of background">
+                {{bgPara}}
+            </p>
+        </ng-container>
+        
+        <ng-container *ngIf="objectives">
+            <h3 class="mt-5">Objectives</h3>
+            <ul><li *ngFor="let objective of objectives">{{objective}}</li></ul>
+        </ng-container>
+    </div>
+
+    <div class="col-md-3">
+        <b class="mb-2">My role</b>
+        <p>{{ myRole }}</p>
+
+        <b class="mb-2">Tools used</b>
+        <p>{{ toolsUsed }}</p>
+
+        <a *ngIf="liveSiteUrl" [href]="liveSiteUrl" target="_blank">
+            <button class="w-100 tiff-btn btn-pri mt-5 mb-3">
+                Live Site
+                <i data-feather="arrow-right" width="20" height="20" class="btn-arrow"></i>
+            </button>
+        </a>
+
+        <a *ngIf="repoUrl" [href]="repoUrl" target="_blank">
+            <button class="w-100 tiff-btn btn-sec">
+                Repository
+                <i data-feather="arrow-right" width="20" height="20" class="btn-arrow"></i>
+            </button>
+        </a>
+    </div>
+</div>
