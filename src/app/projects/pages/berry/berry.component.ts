@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../vibing/vibing.component.css', '../../projects.component.css']
 })
 export class BerryComponent implements OnInit {
+  assetFolderPath = "../../../../assets/berry";
 
   constructor() { }
 

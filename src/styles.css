@@ -35,6 +35,7 @@ html {
   --text-h3: 32px;
   --text-h2: 48px;
   --text-h1: 54px; 
+  --text-display: 4.2rem;
 
   --br-lg: 30px;
   --br-md: 20px;
@@ -60,14 +61,27 @@ html {
 }
 h3, .text-h3 {
   font-size: var(--text-h3);
+  font-weight: bold;
 }
 h2, .text-h2 {
   font-size: var(--text-h2);
+  font-weight: bold;
 }
 h1, .text-h1 {
   font-size: var(--text-h1);
+  font-weight: bold;
+}
+.text-display {
+  font-size: var(--text-display);
+  font-weight: bold;
+}
+.sec-text {
+  color: var(--grey);
 }
 
+li {
+  margin: 18px 0;
+}
 
 .tiff-btn {
   font-weight: bold;

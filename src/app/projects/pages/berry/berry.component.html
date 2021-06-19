@@ -1,54 +1,50 @@
 <app-header [type]="'project'"></app-header>
 
 <app-proj-page-title 
-[tags]="[ 'Flutter', 'Dart' ]"
-title="berry"
-[comingSoon]="false" 
-repoUrl="https://github.com/nottiffchan/berry"
+    [title]="'berry'"
+    [description]="'tile-format shopping list mobile app to ease grocery shopping'"
+    [heroImgPath]="'../../assets/berry/berry-hero.png'"
 ></app-proj-page-title>
 
-<div class="container">
-    <div class="image"><img src="../../../../assets/projects/berry-main.png" alt=""></div>
-    
-    <div class="text-body">
-        <p><span style="font-weight: bold; font-style: italic;">berry</span> is a mobile application created with the Flutter framework as a side project. With <span style="font-weight: bold; font-style: italic;">berry</span>, users no longer need to type out their grocery items one by one and look at boring lines of text, no! Simply tapping on the grocery tiles, already sorted by category and most recently used, seamlessly adds each item to your grocery list. 
-        </p>
-    
-        <p>Being a very visual person, I was tired of seeing and using to-do and grocery list apps which more or less all had the same boring format. I wanted an aesthetically appealing and seamless avenue to make taking down grocery lists an engaging experience.</p>
-    </div>
+<app-project-overview
+    [background]="['berry is a mobile application created with the Flutter framework as a side project. With berry, users no longer need to type out their grocery items one by one and look at boring lines of text, no! Simply tapping on the grocery tiles, already sorted by category and most recently used, seamlessly adds each item to your grocery list.', 'Being a very visual person, I was tired of seeing and using to-do and grocery list apps which more or less all had the same boring format. I wanted an aesthetically appealing and seamless avenue to make taking down grocery lists an engaging experience.']"
 
-    <div class="image">
-        <h3>Some Features:</h3>
-        <div class="row my-5">
-            <div class="col-md-6">
-                <img class="mobile-demo" src="../../../../assets/projects/berry-demo-flow.gif" alt="">
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0 subtitle">
-                Adding and removing items from grocery list
-            </div>
+    [myRole]="'UX, UI Design, Mobile App build'"
+    [toolsUsed]="'Flutter'"
+    [repoUrl]="'https://github.com/nottiffchan/berry'"
+></app-project-overview>
+
+<div style="margin: 200px 0;">
+    <h3>Some Features:</h3>
+    <div class="row my-5">
+        <div class="col-md-6">
+            <img class="mobile-demo" src="../../../../assets/projects/berry-demo-flow.gif" alt="">
         </div>
-
-        <div class="row my-5">
-            <div class="col-md-6 order-md-2 order-lg-2 order-xl-2 order-xxl-2 mt-4 mt-md-0">
-                <img class="mobile-demo" src="../../../../assets/projects/berry-demo-search.gif" alt="">
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0 subtitle">
-                App-wide search for grocery item
-            </div>
-        </div>
-
-        <div class="row my-5">
-            <div class="col-md-6">
-                <img class="mobile-demo" src="../../../../assets/projects/berry-demo-custom.gif" alt="">
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0 subtitle">
-                Adding of custom items
-            </div>
+        <div class="col-md-6 mt-4 mt-md-0 subtitle">
+            Adding and removing items from grocery list
         </div>
     </div>
 
-    <a href="/#projects" class="my-btn sec-btn d-flex align-items-center align-self-center my-5">
+    <div class="row my-5">
+        <div class="col-md-6 order-md-2 order-lg-2 order-xl-2 order-xxl-2 mt-4 mt-md-0">
+            <img class="mobile-demo" src="../../../../assets/projects/berry-demo-search.gif" alt="">
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0 subtitle">
+            App-wide search for grocery item
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-md-6">
+            <img class="mobile-demo" src="../../../../assets/projects/berry-demo-custom.gif" alt="">
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0 subtitle">
+            Adding of custom items
+        </div>
+    </div>
+
+    <!-- <a href="/#projects" class="my-btn sec-btn d-flex align-items-center align-self-center my-5">
         Back to main
         <i data-feather="arrow-right" width="20" height="20" class="live-site-arrow"></i>
-    </a>
+    </a> -->
 </div>

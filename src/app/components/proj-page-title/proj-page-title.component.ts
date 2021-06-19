@@ -7,10 +7,15 @@ import * as Feather from 'feather-icons';
   styleUrls: ['./proj-page-title.component.css']
 })
 export class ProjPageTitleComponent implements OnInit {
-  @Input() tags: Array<any>;
   @Input() title: any;
+  @Input() description: any;
+  @Input() heroImgPath: any;
+
+
   @Input() comingSoon: boolean;
   @Input() liveSiteUrl: string;
+  @Input() tags: Array<any>;
+
   @Input() repoUrl: string;
 
   constructor() { }

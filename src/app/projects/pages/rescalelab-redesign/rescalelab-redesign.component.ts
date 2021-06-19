@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rescalelab-redesign.component.css', '../../projects.component.css']
 })
 export class RescalelabRedesignComponent implements OnInit {
+  assetFolderPath = "../../../../assets/rescalelab-new";
 
   constructor() { }
 

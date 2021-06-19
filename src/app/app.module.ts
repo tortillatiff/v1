@@ -14,6 +14,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { BerryComponent } from './projects/pages/berry/berry.component';
 import { ThegoodstuffComponent } from './projects/pages/thegoodstuff/thegoodstuff.component';
 import { RescalelabRedesignComponent } from './projects/pages/rescalelab-redesign/rescalelab-redesign.component';
+import { ProjectOverviewComponent } from './components/project-overview/project-overview.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { RescalelabRedesignComponent } from './projects/pages/rescalelab-redesig
     LayoutComponent,
     BerryComponent,
     ThegoodstuffComponent,
-    RescalelabRedesignComponent
+    RescalelabRedesignComponent,
+    ProjectOverviewComponent
   ],
   imports: [
     BrowserModule,
