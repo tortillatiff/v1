@@ -106,7 +106,7 @@ li {
   color: var(--purple);
   border: 1px solid var(--purple);
   box-shadow: 2px 3px var(--purple);
-  background-color: var(--bg-color);
+  background-color: transparent;
 }
 
 .btn-sec:hover {
