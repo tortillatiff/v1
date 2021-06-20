@@ -30,4 +30,8 @@ export class HeaderComponent implements OnInit {
     this.opacity = diff / 300;
   }
 
+  navBarFunction() {
+    document.getElementsByClassName("navbar")[0].classList.toggle("responsive");
+  }
+
 }

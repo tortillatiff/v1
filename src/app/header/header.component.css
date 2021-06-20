@@ -2,19 +2,17 @@
   position: sticky;
   z-index: 999;
   top: 0;
-  background-color: #fcf9f7d1;
+  /* background-color: #fcf9f7d1; */
 }
 
-.nav-link {
-  font-weight: 500;
-  margin-right: 11px;
-  padding-right: 1rem!important;
-  padding-left: 1rem!important;
-  color: #899C9E;
-  transition: .2s ease-in-out;
-  font-size: 20px;
-  cursor: none;
+li { margin: 0; }
+
+.logo-a:hover {
+  transform: rotate(360deg);
+  background: var(--yellow);
+  border-radius: 50%;
 }
+
 
 .back-to-main {
   text-decoration: none;
@@ -62,34 +60,82 @@
   }
 }
 
-@media screen and (max-width: 991px) {
-  .navbar-collapse {
-    justify-content: end;
-    text-align: end;
-    z-index: 999;
+
+.navbar_items, .logo {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.icon {
+  display: none;
+}
+
+.navbar li a {
+  display: inline-block;
+  text-align: center;
+  padding: 0 1rem;
+  text-decoration: none;
+
+  font-weight: 500;
+  margin-right: 11px;
+  color: var(--purple);
+  transition: .2s ease-in-out;
+  font-size: var(--text-xs);
+  cursor: none;
+}
+
+.navbar li a:hover {
+  color: var(--pink);
+}
+
+
+@media screen and (max-width:991px) {
+  .navbar li.navbar_items {
+    display: none;
+  }
+
+  .navbar li.icon {
+    float: right;
+    display: inline-block;
     position: absolute;
     right: 0;
-    top: 101px;
-    background-color: #FDF9F7;
+    top: 19px;
+  }
+
+  .navbar.responsive {
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--pink-light);
+    transition: background-color .6s;
   }
   
-  .collapsing {
-    overflow:hidden;
-    justify-content: end;
-    text-align: end;
-    z-index: 999;
-    position: absolute;
-    right: 0;
-    top: 101px;
-    background-color: #FDF9F7;
+  .navbar.responsive ul {
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .navbar.responsive li.logo {
+    float: left;
+    display: block;
+  }
+  .navbar.responsive .div_navbar_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  
+  .navbar.responsive li.navbar_items {
+    display: block;
+  }
+
+  .navbar.responsive li.navbar_items a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--text-h3);
   }
 }
 
-@media screen and (max-width: 400px) {
-  .back-to-main {
-    font-size: 17px;
-  }
-  .back-to-main > svg {
-    height: 20px;
-  }
-}
+
