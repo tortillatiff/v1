@@ -41,7 +41,7 @@ h1 span:hover {
   align-items: center;
   width: 100%;
   height: 90vh;
-  max-width: 1680px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -49,6 +49,8 @@ h1 span:hover {
 .a-button {
   width: 100%;
 }
+
+/* .col-md-4 { flex: 0 0 } */
 
 .title-section {
   display: flex;
