@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/nottiffchan/nottiffchan.github.io/dev/src/assets/girlV2.png" width="100" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/nottiffchan/nottiffchan.com/dev/src/assets/girlV2.png" width="100" />
 </div>
 <h1 align="center">
   nottiffchan.com
@@ -11,4 +11,4 @@
 </div>
 <br><br>
 
-![demo](https://raw.githubusercontent.com/nottiffchan/nottiffchan.github.io/dev/src/assets/demo_ss.png)
+![demo](https://raw.githubusercontent.com/nottiffchan/nottiffchan.com/dev/src/assets/demo_ss.png)
