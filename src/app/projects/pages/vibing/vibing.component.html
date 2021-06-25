@@ -1,12 +1,5 @@
 <app-header [type]="'project'"></app-header>
 
-<!-- <app-proj-page-title
-    [tags]="[ 'Figma', 'Angular', 'Spotify API' ]"
-    title="vibing."
-    [comingSoon]="false" liveSiteUrl="https://v-ibing.herokuapp.com"
-    repoUrl="https://github.com/nottiffchan/vibing"
-></app-proj-page-title>-->
-
 <app-proj-page-title
     [title]="'vibing.'"
     [description]="'Hack&Roll 2021 entry: creating personalized Spotify playlists for friends'"
@@ -24,17 +17,7 @@
 
 <div style="margin-bottom: 200px;"></div>
 
-
-<!-- <a routerLink="/project/rescalelab-redesign" style="text-decoration: none;">
-    <div class="w-100 proj-footer row" style="background-color: #E7D0AB;">
-        <div class="col-sm-6 px-5 d-none d-sm-block">
-            <img class="footer-thumbnail" style="width: 40%;" src="../../../../assets/projects/rsl-thumbnail.png" alt="">
-        </div>
-        <div class="col-sm-6 d-flex flex-column justify-content-center">
-            <p style="color: #6d6d6d;">Next project</p>
-            <h2 class="hover-underline-animation">redesigning rescale lab
-                <i data-feather="arrow-right" width="20" height="20" class="live-site-arrow"></i>
-            </h2>
-        </div>
-    </div>
-</a> -->
+<app-proj-page-footer 
+    [nextProj]=nextProj 
+    [prevProj]="prevProj"
+></app-proj-page-footer>

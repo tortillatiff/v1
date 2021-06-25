@@ -16,7 +16,7 @@ export class ProjectsComponent implements OnInit {
       title: 'Rescale Lab', 
       desc: 'UX/UI case study for website redesign with front-end implementation', 
       imgPath: '../../assets/rescalelab-new/RSC-hero.png', 
-      path: '/project/rescalelab-redesign' 
+      path: '/project/rescalelab' 
     },
     { 
       bgCol: '#EAF0E8', 

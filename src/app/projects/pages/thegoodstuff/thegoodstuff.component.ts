@@ -6,6 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../vibing/vibing.component.css', '../../projects.component.css']
 })
 export class ThegoodstuffComponent implements OnInit {
+  prevProj = {
+    name: "vibing.",
+    routerLink: "/project/vibing"
+  }
+
+  nextProj = {
+    name: "berry",
+    routerLink: "/project/berry"
+  }
+  
 
   constructor() { }
 

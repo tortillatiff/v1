@@ -1,1 +1,31 @@
-<p>proj-page-footer works!</p>
+<div class="w-100">
+    <div class="d-flex w-100 align-items-center justify-content-between pb-5">
+        <div class="prevProj">
+            <a *ngIf="prevProj" [routerLink]="prevProj.routerLink" style="text-decoration: none;">
+                <p *ngIf="prevProj" class="mb-0 text-xs">PREVIOUS PROJECT</p>
+                <div class="d-flex flex-row align-items-center" *ngIf="prevProj">
+                    <i data-feather="arrow-left" width="28" height="28" class="arrow prev-arrow mr-2"></i>
+                    <h3>{{prevProj.name}}</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="nextProj">
+            <a *ngIf="nextProj" [routerLink]="nextProj.routerLink" style="text-decoration: none;">
+                <p *ngIf="nextProj" class="mb-0 text-xs">NEXT PROJECT</p>
+                <div class="d-flex flex-row align-items-center" *ngIf="nextProj">
+                    <h3>{{ nextProj.name }}</h3>
+                    <i data-feather="arrow-right" width="28" height="28" class="arrow next-arrow ml-2"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="my-5 d-flex align-items-center flex-column">
+        <p class="mb-0"><a class="email" href="mailto:hi@nottiffchan.com">hi@nottiffchan.com</a></p>
+        <div class="d-flex flex-row">
+            <a href="https://github.com/nottiffchan" target="_blank"><i data-feather="github" width="22" height="22" class="icon mx-2"></i></a>
+            <a href="https://www.linkedin.com/in/nottiffchan/" target="_blank"><i data-feather="linkedin" width="22" height="22" class="icon mx-2"></i></a>
+        </div>
+    </div>
+</div>

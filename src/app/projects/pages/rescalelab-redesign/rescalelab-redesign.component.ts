@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class RescalelabRedesignComponent implements OnInit {
   assetFolderPath = "../../../../assets/rescalelab-new";
 
+  nextProj = {
+    name: "vibing.",
+    routerLink: "/project/vibing"
+  }
+
   constructor() { }
 
   ngOnInit(): void {

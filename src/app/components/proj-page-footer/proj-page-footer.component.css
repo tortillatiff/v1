@@ -1,0 +1,30 @@
+h3 { margin: 0; }
+
+a { color: var(--black); }
+
+.arrow {
+    transition: var(--transition);
+}
+
+.nextProj:hover .next-arrow {
+    transform: translateX(16px);
+}
+
+.prevProj:hover .prev-arrow {
+    transform: translateX(-16px);
+}
+
+.email {
+    color: var(--purple);
+    font-size: var(--text-xs);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .text-xs {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: var(--text-xs);
+    }
+}

@@ -8,18 +8,7 @@
 
 <h2 style="margin: 100px 0;">Coming Soon</h2>
     
-
-<!-- footer -->
-<!-- <a routerLink="/project/vibing" style="text-decoration: none;">
-    <div class="w-100 proj-footer row" style="background-color: #D9E7DA;">
-        <div class="col-sm-6 px-5 d-none d-sm-block">
-            <img class="footer-thumbnail" style="width: 40%;" src="../../../../assets/projects/vibing-thumbnail.png" alt="">
-        </div>
-        <div class="col-sm-6 d-flex flex-column justify-content-center">
-            <p style="color: #6d6d6d;">Next project</p>
-            <h2 class="hover-underline-animation">vibing.
-                <i data-feather="arrow-right" width="20" height="20" class="live-site-arrow"></i>
-            </h2>
-        </div>
-    </div>
-</a> -->
+<app-proj-page-footer 
+    [nextProj]=nextProj 
+    [prevProj]="prevProj"
+></app-proj-page-footer>
