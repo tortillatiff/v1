@@ -34,8 +34,8 @@ html {
   --text-body: 22px;
   --text-h3: 32px;
   --text-h2: 48px;
-  --text-h1: 54px; 
-  --text-display: 4.2rem;
+  --text-h1: 45px;
+  --text-display: 3.5rem;
 
   --br-lg: 30px;
   --br-md: 20px;
@@ -153,5 +153,10 @@ li {
 @media screen and (min-width: 576px) {
   .tiff-btn {
     width: auto;
+  }
+
+  :root {
+    --text-h1: 54px; 
+    --text-display: 4.2rem;
   }
 }
