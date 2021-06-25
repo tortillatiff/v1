@@ -16,13 +16,13 @@ export class ProjectsComponent implements OnInit {
       title: 'Rescale Lab', 
       desc: 'UX/UI case study for website redesign with front-end implementation', 
       imgPath: '../../assets/rescalelab-new/RSC-hero.png', 
-      path: '/project/rescalelab-redesign' 
+      path: '/project/rescalelab' 
     },
     { 
       bgCol: '#EAF0E8', 
       title: 'vibing.', 
       desc: "Hack&Roll 2021 entry: creating personalized Spotify playlists for friends", 
-      imgPath: '../../assets/projects/vibing-thumbnail.png', 
+      imgPath: '../../assets/vibing/vibing-thumbnail.png', 
       path: '/project/vibing' 
     },
     { 
@@ -36,7 +36,7 @@ export class ProjectsComponent implements OnInit {
       bgCol: "#F8F0E6", 
       title: 'berry', 
       desc: 'tile-format shopping list mobile app to ease grocery shopping.', 
-      imgPath: '../../assets/projects/berry-thumbnail.png', 
+      imgPath: '../../assets/berry/berry-thumbnail.png', 
       path: '/project/berry' 
     },
   ]

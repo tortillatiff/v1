@@ -10,9 +10,8 @@ const routes: Routes = [
   { path: '', component: LayoutComponent },
   { path: 'project/vibing', component: VibingComponent },
   { path: 'project/berry', component: BerryComponent },
-  { path: 'project/rescalelab-redesign', component: RescalelabRedesignComponent },
-  { path: 'project/thegoodstuff', component: ThegoodstuffComponent },
-  { path: '**', component: LayoutComponent }
+  { path: 'project/rescalelab', component: RescalelabRedesignComponent },
+  { path: 'project/thegoodstuff', component: ThegoodstuffComponent }
 ];
 
 @NgModule({

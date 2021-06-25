@@ -28,7 +28,7 @@
   }
   
   .cursor-project-hover {
-    background: url('../assets/images/cursor_openproj.svg') no-repeat;
+    background: url('../assets/cursor_openproj.svg') no-repeat;
     background-size: contain;
     width: 80px;
     height: 80px;

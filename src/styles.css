@@ -34,8 +34,8 @@ html {
   --text-body: 22px;
   --text-h3: 32px;
   --text-h2: 48px;
-  --text-h1: 54px; 
-  --text-display: 4.2rem;
+  --text-h1: 45px;
+  --text-display: 3.5rem;
 
   --br-lg: 30px;
   --br-md: 20px;
@@ -119,39 +119,6 @@ li {
 
 
 
-.my-btn {
-  font-size: 18px;
-  padding: 11px 16px;
-  border-radius: 19px;
-  text-decoration: none!important;
-  color: var(--black)!important;
-  text-align: center;
-  font-weight: 500;
-  justify-content: center;
-  align-content: center;
-  transition: 0.2s ease-in-out;
-  cursor: none!important;
-}
-
-.pri-btn {
-  background-color: var(--yellow);
-  box-shadow: 0 4px 0 #EBC790;
-}
-
-.pri-btn:hover {
-  background-color: #f9dcb1;
-  transform: scale(1.03);
-}
-
-.sec-btn {
-  background-color: #D8E1E2;
-  box-shadow: 0 4px 0 #C8D1D2;
-}
-
-.sec-btn:hover {
-  background-color: #e1ebec;
-  transform: scale(1.03);
-}
 
 .hover-underline-animation {
   display: inline-block;
@@ -177,14 +144,19 @@ li {
   transform-origin: bottom left;
 }
 
-@media screen and (max-width: 767px) {
-  .my-btn {
-    font-size: 16px;
+@media screen and (max-width: 1240px) {
+  body {
+    padding: 0 2rem;
   }
 }
 
 @media screen and (min-width: 576px) {
   .tiff-btn {
     width: auto;
+  }
+
+  :root {
+    --text-h1: 54px; 
+    --text-display: 4.2rem;
   }
 }
