@@ -3,19 +3,65 @@
 <app-proj-page-title
     [title]="'vibing.'"
     [description]="'Hack&Roll 2021 entry: creating personalized Spotify playlists for friends'"
-    [heroImgPath]="'../../assets/vibing/vibing-main-gif.gif'"
+    [heroImgPath]="'../../assets/vibing/vibing-hero.png'"
 ></app-proj-page-title>
 
 <app-project-overview
-    [background]="['vibing. is a web application that 3 friends and I developed for Hack&Roll 2021, an annual hackathon organized by NUS Hackers. It helps friends, especially ones with different music tastes, generate playlists of songs that they’ll both like.', 'At the time of the project, all of us had very little knowledge of web development and the framworks required and we were tragically unable to bring our app to completion in the hackathon.', 'However, after 2 months and gaining more confidence and understanding in the execution of the front and backend, I returned to vibing., redoing most of the code from scratch (both front and back-end) and improving it to create a fully responsive app which I have hosted on Heroku.']"
-
+    [background]="[
+        'vibing. is a web application that 3 friends and I developed for Hack&Roll 2021, an annual hackathon organized by NUS Hackers.', 
+        'Problem: When hanging out with a friend, for instance on a road trip, it is sometimes difficult to listem to music together due to different tastes, and having to queue songs one by one that the other party would also enjoy is a hassle.'
+    ]"
+    [objectives]="['An app that automatically generates a playlist with songs that both you and your friend will like.']"
     [myRole]="'UX, UI Design, Front-End Build, Back-end, Deployment'"
     [toolsUsed]="'Figma, Angular, NodeJS, Spotify API'"
     [repoUrl]="'https://github.com/nottiffchan/vibing'"
     [liveSiteUrl]="'https://v-ibing.herokuapp.com'"
 ></app-project-overview>
 
-<div style="margin-bottom: 200px;"></div>
+<div style="margin: 200px 0;">
+    <h2 class="text-center purple-font">How it works</h2>
+    <div class="row my-5">
+        <div class="col-md-6">
+            <video class="mobile-demo" width="250" autoplay loop>
+                <source [src]="assetFolderPath + '/vibingvid-1.MOV'" type="video/mp4">
+            </video>
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0 subtitle">
+            <p class="mb-0 w-75 text-center text-md-left">User authenticates their Spotify account, then enters the names of the individuals that the playlist is being created for</p>
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-md-6 order-md-2 order-lg-2 order-xl-2 order-xxl-2 mt-4 mt-md-0">
+            <video class="mobile-demo" width="250" autoplay loop>
+                <source [src]="assetFolderPath + '/vibingvid-2.MOV'" type="video/mp4">
+            </video>
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0 subtitle">
+            <p class="mb-0 w-75 text-center text-md-left">Both individuals enter 2 songs each that encapsulate the vibe of music they like
+            </p>
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-md-6">
+            <video class="mobile-demo" width="250" autoplay loop>
+                <source [src]="assetFolderPath + '/vibingvid-3.MOV'" type="video/mp4">
+            </video>
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0 subtitle">
+            <p class="mb-0 w-75 text-center text-md-left">Algorithm generates a ready-to-play Spotify playlist based on the 4 songs inputted</p>
+        </div>
+    </div>
+</div>
+
+<section style="margin: 200px 0;">
+    <h2 class="mb-3">Reflection</h2>
+    <div class="w-75">
+        <p>I’m really proud of this app. Although it’s humble and has a rather simple concept, to me it represents a milestone that I realised I had reached as a developer. During the hackathon itself, as a team of experienced newbies, we were unable to figure out the Spotify authentication process and how to call the API functions within the short timeline of 24 hours, and tragically could not submit a completed product at the end of the hackathon.</p>
+        <p>2 months later however, with a renewed sense of purpose and also 2 months into my first dev internship, I decided to tackle the app again and complete it this time. However, I found that the front-end code I did from 2 months prior, with zero front-end experience, was terrible and I redid the whole app from scratch. The moment I successfully deployed the web app on Heroku and listened to the first playlist it generated affirmed to me that I had come really far and learnt so much in the span of just a few months, and for that reason this particular project makes my heart warm. Ok thanks for listening to my ted talk</p>
+    </div>
+</section>
 
 <app-proj-page-footer 
     [nextProj]=nextProj 

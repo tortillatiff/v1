@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vibing.component.css', '../../projects.component.css']
 })
 export class VibingComponent implements OnInit {
+  assetFolderPath = '../../../../assets/vibing';
+  
   prevProj = {
     name: "Rescale Lab",
     routerLink: "/project/rescalelab"
