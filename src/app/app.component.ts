@@ -9,8 +9,10 @@ export class AppComponent {
   public windowWidth;
 
   ngOnInit() {
+    console.log("✌🏼 coded from scratch with ❤️ and 🎵 by tiff ✌🏼")
+
     this.windowWidth = window.innerWidth;
-    
+     
     let cursor = document.querySelector('.cursor');
     let cursorChild = document.querySelector('.cursor-child');
 
