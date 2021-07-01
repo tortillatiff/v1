@@ -5,7 +5,7 @@
     <div class="row align-items-center">
       <div class="d-flex justify-content-center d-lg-block justify-content-lg-start col-lg-3 order-lg-2">
         <figure class="girlhead fadeIn"><img src="../../assets/herogifV2.gif" class="girlhead w-100" alt=""></figure>
-      </div>
+      </div> 
       <div class="col-lg-9 pr-lg-5 title-section">
         <h1 class="title text-center text-lg-left fadeIn" style="animation-delay: 200ms;">
           <span>h</span><span>o</span><span>l</span><span>a</span><span>, </span><span>i</span><span>’</span><span>m </span><span>t</span><span>i</span><span>f</span><span>f</span><span>!</span>
@@ -27,8 +27,8 @@
       <span><i class="bounce" style="color: var(--purple);" data-feather="chevron-down"></i></span>
     </a>
 </div>
-  
-<div class="wave-divider purple-wave" style="margin-top: 200px;"></div>
+
+<app-wave-divider></app-wave-divider>
 
 <section id="about" class="section d-flex flex-column" style="padding-top: 100px;">
     <h1 class="purple-font" style="margin-bottom: 80px;">about me</h1>
@@ -44,14 +44,20 @@
     </div>
 </section>
 
-<div class="wave-divider green-wave" style="margin-top: 100px;"></div>
+<!-- <div class="wave-divider green-wave" style="margin-top: 100px;"></div> -->
+
+<app-wave-divider></app-wave-divider>
+
 
 <section id="projects" class="section flex-column" style="padding-top: 200px;">
   <h1 class="purple-font" style="margin-bottom: 80px;">projects</h1>
   <app-projects (enterProjCursor)="enterProjCursor()" (exitProjCursor)="exitProjCursor()" (openProjCursor)="exitProjCursor()"></app-projects>
 </section>
 
-<div class="wave-divider pink-wave" style="margin-top: 100px;"></div>
+<!-- <div class="wave-divider pink-wave" style="margin-top: 100px;"></div> -->
+
+<app-wave-divider></app-wave-divider>
+
   
 <section id="skills" class="section flex-column" style="padding-top: 200px; margin-bottom: 100px;">
   <div class="d-flex align-items-center justify-content-between w-100 flex-wrap flex-md-nowrap" style="margin-bottom: 80px;">

@@ -70,34 +70,6 @@ h1 span:hover {
   width: 70%;
 }
 
-.wave-divider { 
-  width: 100%;
-  position: relative;
-  height: 28px;
-  animation: 10s wave linear infinite;
-}
-.purple-wave {
-  background: url(../../assets/wave.svg) repeat-x 0%;
-  background-size: contain;
-}
-.green-wave {
-  background: url(../../assets/greenwave.svg) repeat-x 0%;
-  background-size: contain;
-}
-.pink-wave {
-  background: url(../../assets/pinkwave.svg) repeat-x 0%;
-  background-size: contain;
-}
-
-@keyframes wave {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
-}
-
 @keyframes topFadeOut {
   0% {
     top: -3rem;
