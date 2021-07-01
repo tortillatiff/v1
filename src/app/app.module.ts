@@ -15,6 +15,7 @@ import { BerryComponent } from './projects/pages/berry/berry.component';
 import { ThegoodstuffComponent } from './projects/pages/thegoodstuff/thegoodstuff.component';
 import { RescalelabRedesignComponent } from './projects/pages/rescalelab-redesign/rescalelab-redesign.component';
 import { ProjectOverviewComponent } from './components/project-overview/project-overview.component';
+import { WaveDividerComponent } from './components/wave-divider/wave-divider.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProjectOverviewComponent } from './components/project-overview/project-
     BerryComponent,
     ThegoodstuffComponent,
     RescalelabRedesignComponent,
-    ProjectOverviewComponent
+    ProjectOverviewComponent,
+    WaveDividerComponent
   ],
   imports: [
     BrowserModule,
