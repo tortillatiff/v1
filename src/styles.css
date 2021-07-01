@@ -3,7 +3,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-  font-family: var(--font-serif);
+  font-family: var(--font-family-sans-serif);
   background-color: var(--bg-color);
   font-size: var(--text-body);
   cursor: none!important;
@@ -30,19 +30,19 @@ html {
   --yellow: #F5D5A4;
   --bg-color: #FDF9F7;
 
+  --text-display: 4.2rem;
+  --text-h1: 54px; 
+  --text-h2: 36px;
+  --text-h3: 24px;
+  --text-body: 18px;
   --text-xs: 18px;
-  --text-body: 22px;
-  --text-h3: 32px;
-  --text-h2: 48px;
-  --text-h1: 45px;
-  --text-display: 3.5rem;
 
   --br-lg: 30px;
   --br-md: 20px;
   --br-sm: 10px;
 
-  --font-serif: 'DM Sans', sans-serif;
-  --font-mono: 'Ubuntu Mono';
+  --font-family-sans-serif: 'DM Sans', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-monospace: 'Ubuntu Mono', SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 
   --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -115,11 +115,6 @@ li {
   color: white;
 }
 
-
-
-
-
-
 .hover-underline-animation {
   display: inline-block;
   width: fit-content;
@@ -156,7 +151,10 @@ li {
   }
 
   :root {
-    --text-h1: 54px; 
-    --text-display: 4.2rem;
+    --text-body: 22px;
+    --text-h3: 32px;
+    --text-h2: 48px;
+    --text-h1: 45px;
+    --text-display: 3.5rem;
   }
 }
