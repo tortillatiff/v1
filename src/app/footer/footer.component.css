@@ -2,30 +2,32 @@ h1, p {
     color: #ffdac7;
 }
 
-.text {
-    width: 50%;
-}
-
 h1 {
     font-weight: 700; 
-    font-size: 6rem; 
-    text-align: center;
+    font-size: 68px;
 }
 
-p {
-    text-align: center; 
-    font-size: 1.2rem;
+.subtitle {
+    width: 100%;
 }
 
 .icon {
-    transition: .2s ease-in-out;
+    transition: .2s ease-in-out; 
 }
 
 .icon:hover {
     color: #ffbfbf;
 }
 
+.footnote {
+    font-family: var(--font-family-monospace);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: var(--text-xs);
+}
+
 .footer-content {
+    height: 90vh;
     visibility: visible;
     opacity: 0;
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
@@ -38,60 +40,14 @@ p {
     transition: opacity 600ms cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s, transform 600ms cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
 }
 
-@media screen and (max-width: 991px) {
-    h1 {
-        font-size: 5rem;
-    }
+@media screen and (min-width: 768px) {
+    h1 { font-size: 88px; }
 
-    p {
-        font-size: 1rem;
+    .subtitle {
+        width: 80%;
     }
 }
 
-@media screen and (max-width: 767px) {
-    h1 {
-        font-size: 4rem;
-    }
-
-    p {
-        font-size: 0.8rem;
-    }
-
-    i {
-        width: 26px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    h1 {
-        font-size: 3rem;
-    }
-
-    p {
-        font-size: 0.7rem;
-    }
-
-    text {
-        width: 90%;
-    }
-
-    svg {
-        width: 21px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    p {
-        font-size: 0.7rem;
-    }
-}
-
-@media screen and (max-width: 340px) {
-    h1 {
-        font-size: 2rem;
-    }
+@media screen and (min-width: 992px) {
+    h1 { font-size: 100px; }
 }
