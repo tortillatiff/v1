@@ -1,4 +1,5 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import * as Feather from 'feather-icons';
 
 @Component({
@@ -9,16 +10,8 @@ import * as Feather from 'feather-icons';
 export class HeaderComponent implements OnInit {
   @Input() type: string;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  ngAfterViewInit() {
-    Feather.replace();
-  }
-
   opacity;
+  screenWidth: any;
 
   @HostListener("window:scroll", ["$event"])
   onWindowScroll() {
@@ -30,8 +23,38 @@ export class HeaderComponent implements OnInit {
     this.opacity = diff / 300;
   }
 
-  navBarFunction() {
-    document.getElementsByClassName("navbar")[0].classList.toggle("responsive");
+  constructor(private router: Router) { }
+
+  ngOnInit(): void {
+    this.screenWidth = window.innerWidth;
+  }
+
+  ngAfterViewInit() {
+    Feather.replace();
+  }
+
+  scrollToElem(elemId:string) {
+    if (this.type == 'project') {
+      this.router.navigate(['/']);
+    }
+    document.getElementById(elemId).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
+
+    this.toggleResponsiveMenu();
+  }
+
+  toggleResponsiveMenu() {
+    if (this.screenWidth < 991) {
+      document.getElementsByClassName("navbar")[0].classList.toggle("responsive");
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.screenWidth = window.innerWidth;
   }
 
 }

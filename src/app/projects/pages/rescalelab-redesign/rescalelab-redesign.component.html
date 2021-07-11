@@ -1,144 +1,147 @@
 <app-header [type]="'project'"></app-header>
 
-<app-proj-page-title
-    [title]="'Rescale Lab'"
-    [description]="'UX Case Study of my responsive website design & implementation of an entrepreneurial platform'"
-    [heroImgPath]="'../../assets/rescalelab-new/RSC-hero.png'"
-></app-proj-page-title>
-
-<app-project-overview
-    [background]="[
-    'From Jan to June 2021, I was a full stack developer intern at Rescale Lab, a tech startup that aims to provide aspiring entrepreneurs with the connectivity and guidance to build a successful startup using their online platform.', 
-    'Over time, as the platform grew in features it was imperative that a consistent style and visual language had to be maintained across all areas of the product. I realised the pressing need for collection of reusable components, guided by clear principles that can be combined together to create simple and complex experiences, as needed. Following this, I spearheaded the team effort in a complete user flow and UI/UX overhaul.']"
+<div class="proj-wrap">
+    <app-proj-page-title
+        [title]="'Rescale Lab'"
+        [description]="'UX Case Study of my responsive website design & implementation of an entrepreneurial platform'"
+        [heroImgPath]="'../../assets/rescalelab-new/RSC-hero.png'"
+    ></app-proj-page-title>
     
-    [objectives]="['Redesign the Rescale Lab platform and develop the brand personality in a modern, user-friendly way', 'Improve the user flow with thought-out user experience', 'Improve responsiveness of website']"
-
-    [myRole]="'UX, UI Design, Front-End Build'"
-    [toolsUsed]="'Figma, Angular'"
-    [liveSiteUrl]="'https://rescalelab.com'"
-></app-project-overview>
-
-
-<section style="margin-top: 200px;">
-    <h1 style="color: var(--purple); text-align: center; margin-bottom: 80px;">Design Process</h1>
-
-    <h2 class="mb-4">Research</h2>
-    <h3>Usability Testing</h3>
-
-    <div class="row m-0">
-        <div class="col-md-6"> 
-            <p class="mb-4">Using the existing Rescale Lab site, I conducted usability tests and collected feedback on 3 new users in order to analyze its strengths, weaknesses and pain points. I also analyzed Hotjar videos of the existing user behavior. This helped me understand what users need and desire from the site.</p>
-            
+    <app-project-overview
+        [background]="[
+        'From Jan to June 2021, I was a full stack developer intern at Rescale Lab, a tech startup that aims to provide aspiring entrepreneurs with the connectivity and guidance to build a successful startup using their online platform.',
+        'Over time, as the platform grew in features it was imperative that a consistent style and visual language had to be maintained across all areas of the product. I realised the pressing need for collection of reusable components, guided by clear principles that can be combined together to create simple and complex experiences, as needed. Following this, I spearheaded the team effort in a complete user flow and UI/UX overhaul.']"
+    
+        [objectives]="['Redesign the Rescale Lab platform and develop the brand personality in a modern, user-friendly way', 'Improve the user flow with thought-out user experience', 'Improve responsiveness of website']"
+    
+        [myRole]="'UX, UI Design, Front-End Build'"
+        [toolsUsed]="'Figma, Angular'"
+        [liveSiteUrl]="'https://rescalelab.com'"
+    ></app-project-overview>
+    
+    
+    <section style="margin-top: 200px;">
+        <h1 style="color: var(--purple); text-align: center; margin-bottom: 80px;">Design Process</h1>
+    
+        <h2 class="mb-4">Research</h2>
+        <h3>Usability Testing</h3>
+    
+        <div class="row m-0">
+            <div class="col-md-6">
+                <p class="mb-4">Using the existing Rescale Lab site, I conducted usability tests and collected feedback on 3 new users in order to analyze its strengths, weaknesses and pain points. I also analyzed Hotjar videos of the existing user behavior. This helped me understand what users need and desire from the site.</p>
+    
+                <ul>
+                    <li>There were many complaints about disorganization and inconsistencies in visual design (colors, fonts, UI components, etc)
+                    </li>
+                    <li>Participants exhibited confusion and hesitation around location information and navigating around the platform (information overload)</li>
+                    <li>Many of the users were participants in entrepreneurial programs</li>
+                    <li>The features of the site are not immediately obvious, and participants had difficulties navigating around.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img [src]="assetFolderPath + '/usability-testing.png'">
+            </div>
+        </div>
+    
+    
+        <h3 style="margin-top: 100px;">User Personas</h3>
+        <p>Using the insights gained from my research, I created some user personas to quickly identify Rescale Lab’s potential users. These provisional personas helped set the criteria for my interview participants and would be validated through user interviews.</p>
+    
+        <div class="row mx-0 mt-5">
+            <div class="col-md-6 p-2">
+                <img [src]="assetFolderPath + '/user-persona-1.png'">
+            </div>
+            <div class="col-md-6 p-2">
+                <img [src]="assetFolderPath + '/user-persona-2.png'">
+            </div>
+        </div>
+    
+    
+        <h3 style="margin-top: 100px;">Formulating UI Requirements</h3>
+        <div style="width: 80%;">
+            <p>After speaking to a group of users, I came up with some basic UI requirements for my redesign of the key screens.</p>
+            <b>Landing page:</b>
             <ul>
-                <li>There were many complaints about disorganization and inconsistencies in visual design (colors, fonts, UI components, etc)
-                </li>
-                <li>Participants exhibited confusion and hesitation around location information and navigating around the platform (information overload)</li>
-                <li>Many of the users were participants in entrepreneurial programs</li>
-                <li>The features of the site are not immediately obvious, and participants had difficulties navigating around.</li>
+                <li>Attractive Hero image and a large eye-catching slogan to grab user attention and give user a sense of the brand style and what Rescale Lab is about</li>
+                <li>Cover Rescale Lab's value propositions and features briefly</li>
+                <li>Customer Testimonials displaying positive reviews about the platform to promote image</li>
+            </ul>
+            <b>Home page:</b>
+            <ul>
+                <li>A left-side panel with the user's different project spaces prominently listed</li>
+            </ul>
+            <b>Inside project space:</b>
+            <ul>
+                <li>Display all project widgets in a left-side panel</li>
+                <li>Prominently display current project space name</li>
             </ul>
         </div>
-        <div class="col-md-6">
-            <img [src]="assetFolderPath + '/usability-testing.png'">
+    </section>
+    
+    <section style="margin-top: 200px;">
+        <h2 class="mb-4">Design</h2>
+        <h3 class="mb-2">Lo-Fi Wireframe Sketches</h3>
+        <p>Using the UI requirements, I started sketching low-fidelity pages. Using a pencil and paper to roughly sketch helps me capture ideas quickly.</p>
+    
+        <div class="row m-0 mt-4">
+            <div class="col-md-6 p-0">
+                <img [src]="assetFolderPath + '/lo-fi-1.png'">
+            </div>
+            <div class="col-md-6 p-0">
+                <img [src]="assetFolderPath + '/lo-fi-2.png'">
+            </div>
         </div>
-    </div>
-
-
-    <h3 style="margin-top: 100px;">User Personas</h3>
-    <p>Using the insights gained from my research, I created some user personas to quickly identify Rescale Lab’s potential users. These provisional personas helped set the criteria for my interview participants and would be validated through user interviews.</p>
-
-    <div class="row mx-0 mt-5">
-        <div class="col-md-6 p-2">
-            <img [src]="assetFolderPath + '/user-persona-1.png'">
+    
+    
+        <h3 class="mb-2" style="margin-top: 100px;">Design System</h3>
+        <p>Informed by the previous phases in the design process, the UI began to take shape. Due to the amount of user feedback that the style throughout the site was wildly inconsistent and not adhering to any brand personality, I decided to invest more time into building a design system with ready to use UI components and styles that the dev team, and future designers could use to guide their design decisions.</p>
+        <p>One of the greatest challenges I faced was how to facilitate the adoption of this system by the other developers, most of which had little to no UX/UI experience. One of the ways I did this was by adding code snippets throughout the guide to allow for the dev team (which included myself) to quickly plug and play the styles which I had already created the global stylesheet for within the codebase.</p>
+    
+        <img class="my-5" [src]="assetFolderPath + '/design-system.png'" alt="">
+    
+        <p>The link to the current version of the design system can be found <a style="color: var(--pink-dark);" href="https://zeroheight.com/596dd3e26/p/30e71b-rescale-lab" target="_blank">here</a>.</p>
+    </section>
+    
+    <section style="margin-top: 100px;">
+        <h3 class="mb-5">High-Fidelity Wireframes</h3>
+    
+        <div class="row m-0">
+            <div class="col-md-10 p-1">
+                <b class="mb-3">Landing Page - Desktop</b>
+                <img [src]="assetFolderPath + '/landingpage-desktop.png'" alt="">
+            </div>
+            <div class="col-md-2 p-1">
+                <b class="mb-3">Landing Page - Mobile</b>
+                <img [src]="assetFolderPath + '/landingpage-mobile.png'" alt="">
+            </div>
         </div>
-        <div class="col-md-6 p-2">
-            <img [src]="assetFolderPath + '/user-persona-2.png'">
+    
+        <b style="margin-top: 100px;">Sign up flow wireframes</b>
+        <img [src]="assetFolderPath + '/signup-flow.png'" alt="">
+    
+        <div class="row" style="margin: 100px 0 0 0;">
+            <div class="col-md-10 p-1">
+                <b class="mb-3">Homepage - Desktop</b>
+                <img [src]="assetFolderPath + '/homepage-desktop.png'" alt="">
+            </div>
+            <div class="col-md-2 p-1">
+                <b class="mb-3">Homepage - Mobile</b>
+                <img [src]="assetFolderPath + '/homepage-mobile.png'" alt="">
+            </div>
         </div>
-    </div>
-
-
-    <h3 style="margin-top: 100px;">Formulating UI Requirements</h3>
-    <div style="width: 80%;">
-        <p>After speaking to a group of users, I came up with some basic UI requirements for my redesign of the key screens.</p>
-        <b>Landing page:</b>
-        <ul>
-            <li>Attractive Hero image and a large eye-catching slogan to grab user attention and give user a sense of the brand style and what Rescale Lab is about</li>
-            <li>Cover Rescale Lab's value propositions and features briefly</li>
-            <li>Customer Testimonials displaying positive reviews about the platform to promote image</li>
-        </ul>
-        <b>Home page:</b>
-        <ul>
-            <li>A left-side panel with the user's different project spaces prominently listed</li>
-        </ul>
-        <b>Inside project space:</b>
-        <ul>
-            <li>Display all project widgets in a left-side panel</li>
-            <li>Prominently display current project space name</li>
-        </ul>
-    </div>
-</section>
-
-<section style="margin-top: 200px;">
-    <h2 class="mb-4">Design</h2>
-    <h3 class="mb-2">Lo-Fi Wireframe Sketches</h3>
-    <p>Using the UI requirements, I started sketching low-fidelity pages. Using a pencil and paper to roughly sketch helps me capture ideas quickly.</p>
-
-    <div class="row m-0 mt-4">
-        <div class="col-md-6 p-0">
-            <img [src]="assetFolderPath + '/lo-fi-1.png'">
+    </section>
+    
+    <section style="margin: 200px 0;">
+        <h2 class="mb-3">Reflection</h2>
+        <div class="w-75">
+            <p>I really enjoyed working on this project, from starting our first design system from scratch to coming up with user flows and page wireframes, even getting to code most of my designs out. Having the opportunity to give the confusing and outdated-feeling site a major overhaul really pushed me to read up on things like standard practices for UX research procedures, and implementing things in the frontend.</p>
+            <p>After doing some preliminary user testing, the feedback is really encouraging and it's really cool knowing that I was directing the entire brand look and feel of the company. Being a developer and the only designer in a startup gave me a lot of autonomy to explore and build the artistic direction of the site freely while still being able to consider the technical constraints, and I feel that this really helped me pick things up rapidly since I had to do everything on my own. </p>
+            <p>One of my biggest takeaways was how important the presence of micro-animations and interactions really are. I look for these micro-interactions in every app and website now. From Instagram's story transitions to Google's dinosaur game error page, micro-interactions create delightful experiences and tell your brand story, allowing you to connect with the user.</p>
         </div>
-        <div class="col-md-6 p-0">
-            <img [src]="assetFolderPath + '/lo-fi-2.png'">
-        </div>
-    </div>
+    </section>
 
+    <app-proj-page-footer 
+        [nextProj]=nextProj
+    ></app-proj-page-footer>
+</div>
 
-    <h3 class="mb-2" style="margin-top: 100px;">Design System</h3>
-    <p>Informed by the previous phases in the design process, the UI began to take shape. Due to the amount of user feedback that the style throughout the site was wildly inconsistent and not adhering to any brand personality, I decided to invest more time into building a design system with ready to use UI components and styles that the dev team, and future designers could use to guide their design decisions.</p>
-    <p>One of the greatest challenges I faced was how to facilitate the adoption of this system by the other developers, most of which had little to no UX/UI experience. One of the ways I did this was by adding code snippets throughout the guide to allow for the dev team (which included myself) to quickly plug and play the styles which I had already created the global stylesheet for within the codebase.</p>
-
-    <img class="my-5" [src]="assetFolderPath + '/design-system.png'" alt="">
-
-    <p>The link to the current version of the design system can be found <a style="color: var(--pink-dark);" href="https://zeroheight.com/596dd3e26/p/30e71b-rescale-lab" target="_blank">here</a>.</p>
-</section>
-
-<section style="margin-top: 100px;">
-    <h3 class="mb-5">High-Fidelity Wireframes</h3>
-
-    <div class="row m-0">
-        <div class="col-md-10 p-1">
-            <b class="mb-3">Landing Page - Desktop</b>
-            <img [src]="assetFolderPath + '/landingpage-desktop.png'" alt="">
-        </div>
-        <div class="col-md-2 p-1">
-            <b class="mb-3">Landing Page - Mobile</b>
-            <img [src]="assetFolderPath + '/landingpage-mobile.png'" alt="">
-        </div>
-    </div>
-
-    <b style="margin-top: 100px;">Sign up flow wireframes</b>
-    <img [src]="assetFolderPath + '/signup-flow.png'" alt="">
-
-    <div class="row" style="margin: 100px 0 0 0;">
-        <div class="col-md-10 p-1">
-            <b class="mb-3">Homepage - Desktop</b>
-            <img [src]="assetFolderPath + '/homepage-desktop.png'" alt="">
-        </div>
-        <div class="col-md-2 p-1">
-            <b class="mb-3">Homepage - Mobile</b>
-            <img [src]="assetFolderPath + '/homepage-mobile.png'" alt="">
-        </div>
-    </div>
-</section>
-
-<section style="margin: 200px 0;">
-    <h2 class="mb-3">Reflection</h2>
-    <div class="w-75">
-        <p>I really enjoyed working on this project, from starting our first design system from scratch to coming up with user flows and page wireframes, even getting to code most of my designs out. Having the opportunity to give the confusing and outdated-feeling site a major overhaul really pushed me to read up on things like standard practices for UX research procedures, and implementing things in the frontend.</p>
-        <p>After doing some preliminary user testing, the feedback is really encouraging and it's really cool knowing that I was directing the entire brand look and feel of the company. Being a developer and the only designer in a startup gave me a lot of autonomy to explore and build the artistic direction of the site freely while still being able to consider the technical constraints, and I feel that this really helped me pick things up rapidly since I had to do everything on my own. </p>
-        <p>One of my biggest takeaways was how important the presence of micro-animations and interactions really are. I look for these micro-interactions in every app and website now. From Instagram's story transitions to Google's dinosaur game error page, micro-interactions create delightful experiences and tell your brand story, allowing you to connect with the user.</p>
-    </div>
-</section>
-
-<app-proj-page-footer 
-    [nextProj]=nextProj
-></app-proj-page-footer>

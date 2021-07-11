@@ -139,9 +139,13 @@ li {
   transform-origin: bottom left;
 }
 
-@media screen and (max-width: 1240px) {
-  body {
-    padding: 0 2rem;
+.proj-wrap {
+  padding: 0 24px;
+}
+
+@media screen and (min-width: 1240px) {
+  .proj-wrap {
+    padding: 0;
   }
 }
 

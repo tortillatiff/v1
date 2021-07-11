@@ -26,6 +26,7 @@
 .card img {
     padding: 0 1rem 3rem 1rem;
     transition: .3s ease-in-out;
+    object-fit: contain;
 }
 
 .card:hover {

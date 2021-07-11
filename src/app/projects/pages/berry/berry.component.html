@@ -1,49 +1,52 @@
 <app-header [type]="'project'"></app-header>
 
-<app-proj-page-title 
-    [title]="'berry'"
-    [description]="'tile-format shopping list mobile app to ease grocery shopping'"
-    [heroImgPath]="'../../assets/berry/berry-hero.png'"
-></app-proj-page-title>
-
-<app-project-overview
-    [background]="['berry is a mobile application created with the Flutter framework as a side project. With berry, users no longer need to type out their grocery items one by one and look at boring lines of text, no! Simply tapping on the grocery tiles, already sorted by category and most recently used, seamlessly adds each item to your grocery list.', 'Being a very visual person, I was tired of seeing and using to-do and grocery list apps which more or less all had the same boring format. I wanted an aesthetically appealing and seamless avenue to make taking down grocery lists an engaging experience.']"
-
-    [myRole]="'UX, UI Design, Mobile App build'"
-    [toolsUsed]="'Flutter'"
-    [repoUrl]="'https://github.com/nottiffchan/berry'"
-></app-project-overview>
-
-<div style="margin: 200px 0;">
-    <h3>Some Features:</h3>
-    <div class="row my-5">
-        <div class="col-md-6">
-            <img class="mobile-demo" [src]="assetFolderPath + '/berry-demo-flow.gif'" alt="">
+<div class="proj-wrap">
+    <app-proj-page-title
+        [title]="'berry'"
+        [description]="'tile-format shopping list mobile app to ease grocery shopping'"
+        [heroImgPath]="'../../assets/berry/berry-hero.png'"
+    ></app-proj-page-title>
+    
+    <app-project-overview
+        [background]="['berry is a mobile application created with the Flutter framework as a side project. With berry, users no longer need to type out their grocery items one by one and look at boring lines of text, no! Simply tapping on the grocery tiles, already sorted by category and most recently used, seamlessly adds each item to your grocery list.', 'Being a very visual person, I was tired of seeing and using to-do and grocery list apps which more or less all had the same boring format. I wanted an aesthetically appealing and seamless avenue to make taking down grocery lists an engaging experience.']"
+    
+        [myRole]="'UX, UI Design, Mobile App build'"
+        [toolsUsed]="'Flutter'"
+        [repoUrl]="'https://github.com/nottiffchan/berry'"
+    ></app-project-overview>
+    
+    <div style="margin: 200px 0;">
+        <h3>Some Features:</h3>
+        <div class="row my-5">
+            <div class="col-md-6">
+                <img class="mobile-demo" [src]="assetFolderPath + '/berry-demo-flow.gif'" alt="">
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0 subtitle">
+                Adding and removing items from grocery list
+            </div>
         </div>
-        <div class="col-md-6 mt-4 mt-md-0 subtitle">
-            Adding and removing items from grocery list
+    
+        <div class="row my-5">
+            <div class="col-md-6 order-md-2 order-lg-2 order-xl-2 order-xxl-2 mt-4 mt-md-0">
+                <img class="mobile-demo" [src]="assetFolderPath + '/berry-demo-search.gif'" alt="">
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0 subtitle">
+                App-wide search for grocery item
+            </div>
+        </div>
+    
+        <div class="row my-5">
+            <div class="col-md-6">
+                <img class="mobile-demo" [src]="assetFolderPath + '/berry-demo-custom.gif'" alt="">
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0 subtitle">
+                Adding of custom items
+            </div>
         </div>
     </div>
 
-    <div class="row my-5">
-        <div class="col-md-6 order-md-2 order-lg-2 order-xl-2 order-xxl-2 mt-4 mt-md-0">
-            <img class="mobile-demo" [src]="assetFolderPath + '/berry-demo-search.gif'" alt="">
-        </div>
-        <div class="col-md-6 mt-4 mt-md-0 subtitle">
-            App-wide search for grocery item
-        </div>
-    </div>
-
-    <div class="row my-5">
-        <div class="col-md-6">
-            <img class="mobile-demo" [src]="assetFolderPath + '/berry-demo-custom.gif'" alt="">
-        </div>
-        <div class="col-md-6 mt-4 mt-md-0 subtitle">
-            Adding of custom items
-        </div>
-    </div>
+    <app-proj-page-footer class="my-5"
+        [prevProj]="prevProj"
+    ></app-proj-page-footer>
 </div>
 
-<app-proj-page-footer class="my-5"
-[prevProj]="prevProj"
-></app-proj-page-footer>
