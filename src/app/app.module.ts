@@ -16,6 +16,7 @@ import { ThegoodstuffComponent } from './projects/pages/thegoodstuff/thegoodstuf
 import { RescalelabRedesignComponent } from './projects/pages/rescalelab-redesign/rescalelab-redesign.component';
 import { ProjectOverviewComponent } from './components/project-overview/project-overview.component';
 import { WaveDividerComponent } from './components/wave-divider/wave-divider.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { WaveDividerComponent } from './components/wave-divider/wave-divider.com
     ThegoodstuffComponent,
     RescalelabRedesignComponent,
     ProjectOverviewComponent,
-    WaveDividerComponent
+    WaveDividerComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

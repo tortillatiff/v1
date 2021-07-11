@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-rescalelab-redesign',
   templateUrl: './rescalelab-redesign.component.html',
-  styleUrls: ['./rescalelab-redesign.component.css', '../../projects.component.css']
+  styleUrls: ['./rescalelab-redesign.component.css']
 })
 export class RescalelabRedesignComponent implements OnInit {
   assetFolderPath = "../../../../assets/rescalelab-new";

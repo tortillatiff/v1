@@ -1,8 +1,9 @@
-.wave-divider { 
+/* .wave-divider { 
     width: 100%;
     position: relative;
-    height: 36px;
+    height: 13px;
     margin: 100px 0;
+    -webkit-animation: 3s wave linear infinite;
     animation: 5s wave linear infinite;
 }
 
@@ -12,7 +13,7 @@
 }
 
 .green-wave {
-    background: url(../../../assets/wavelines/green-wave.svg) repeat-x 0%;
+    background: url('../../../assets/wavelines/green-wave.svg') repeat-x 0%;
     background-size: contain;
 }
 
@@ -24,13 +25,94 @@
 .yellow-wave {
     background: url(../../../assets/wavelines/yellow-wave.svg) repeat-x 0%;
     background-size: contain;
+} */
+
+.green-wave {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    background: var(--bg-color);
 }
 
-@keyframes wave {
+.green-wave::before {
+    content: '....................................................................................................................................................................................................................';
+    position: relative;
+    top: -60px;
+    color: var(--bg-color);
+    font-size: 3em;
+    text-decoration-thickness: 15px;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--green);
+    text-decoration-line: underline;
+    animation: tt 3s linear infinite;
+}
+
+.pink-wave {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    background: var(--bg-color);
+}
+
+.pink-wave::before {
+    content: '....................................................................................................................................................................................................................';
+    position: relative;
+    top: -60px;
+    color: var(--bg-color);
+    font-size: 3em;
+    text-decoration-thickness: 15px;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--pink);
+    text-decoration-line: underline;
+    animation: tt 3s linear infinite;
+}
+
+.yellow-wave {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    background: var(--bg-color);
+}
+
+.yellow-wave::before {
+    content: '....................................................................................................................................................................................................................';
+    position: relative;
+    top: -60px;
+    color: var(--bg-color);
+    font-size: 3em;
+    text-decoration-thickness: 15px;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--yellow);
+    text-decoration-line: underline;
+    animation: tt 3s linear infinite;
+}
+
+.purple-wave {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    background: var(--bg-color);
+}
+
+.purple-wave::before {
+    content: '....................................................................................................................................................................................................................';
+    position: relative;
+    top: -60px;
+    color: var(--bg-color);
+    font-size: 3em;
+    text-decoration-thickness: 15px;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--purple);
+    text-decoration-line: underline;
+    animation: tt 3s linear infinite;
+}
+
+
+@keyframes tt {
     0% {
-      background-position: 0 0;
+        left: 0px;
     }
     100% {
-      background-position: 100% 0;
+        left: -400px;
     }
 }
