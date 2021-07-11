@@ -139,7 +139,7 @@ section {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  padding: 50px 0;
+  padding-top: 100px;
 }
 
 .section {
@@ -208,6 +208,10 @@ a {
   opacity: 0;
 }
 
+.body-wrap {
+  padding: 0 24px;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 577px) {
@@ -250,5 +254,9 @@ a {
     width: 95%;
   }
 
-  section { padding: 0; }
+  /* section { padding: 0; } */
+}
+
+@media screen and (min-width: 1240px) {
+  .body-wrap { padding: 0; }
 }

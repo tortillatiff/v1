@@ -1,14 +1,16 @@
 <app-header [type]="'project'"></app-header>
 
-<app-proj-page-title
-    [description]="'full-stack e-commerce platform with authentication and payment features'"
-    [heroImgPath]="'../../assets/projects/thegoodstuff-main.png'"
-    title="the good stuff">
-</app-proj-page-title>
-
-<h2 style="margin: 100px 0;">Coming Soon</h2>
+<div class="proj-wrap">
+    <app-proj-page-title
+        [description]="'full-stack e-commerce platform with authentication and payment features'"
+        [heroImgPath]="'../../assets/projects/thegoodstuff-main.png'"
+        title="the good stuff">
+    </app-proj-page-title>
     
-<app-proj-page-footer 
-    [nextProj]=nextProj 
-    [prevProj]="prevProj"
-></app-proj-page-footer>
+    <h2 style="margin: 100px 0;">Coming Soon</h2>
+
+    <app-proj-page-footer 
+        [nextProj]=nextProj 
+        [prevProj]="prevProj"
+    ></app-proj-page-footer>
+</div>

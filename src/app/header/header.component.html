@@ -8,19 +8,20 @@
       </a> 
     </li>
 
-    <section class="div_navbar_items">
-      <li class="navbar_items fadedown" style="animation-delay: 200ms;"> <a href="/#about"> about </a> </li>
-      <li class="navbar_items fadedown" style="animation-delay: 400ms;"> <a href="/#projects"> projects </a> </li>
-      <li (click)="navBarFunction()" class="navbar_items fadedown" style="animation-delay: 600ms;"> <a href="#skills"> skills </a> </li>
-      <li (click)="navBarFunction()" class="navbar_items fadedown" style="animation-delay: 800ms;"> <a href="#contact">
-        <button class="tiff-btn btn-sec" style="padding: 8px 24px;">get in touch!</button>
-      </a> </li>
-    </section>
-
-    <li class="icon">
-      <a (click)="navBarFunction()">
-        <img src="../../assets/menu-toggle.svg" style="height: 25px;" alt="">
-      </a>
-    </li>
+    <ng-container *ngIf="type == 'main'">
+      <section class="div_navbar_items">
+        <li class="navbar_items fadedown" style="animation-delay: 200ms;" (click)="scrollToElem('about')"> about </li>
+        <li class="navbar_items fadedown" style="animation-delay: 400ms;" (click)="scrollToElem('projects')"> projects </li>
+        <li class="navbar_items fadedown" style="animation-delay: 600ms;" (click)="scrollToElem('skills')"> skills </li>
+        <li class="navbar_items fadedown" style="animation-delay: 800ms;" (click)="scrollToElem('contact')">
+          <button class="tiff-btn btn-sec" style="padding: 8px 24px;">get in touch!</button>
+        </li>
+      </section>
+      <li class="icon">
+        <a (click)="toggleResponsiveMenu()">
+          <img src="../../assets/menu-toggle.svg" style="height: 25px;" alt="">
+        </a>
+      </li>
+    </ng-container>
   </ul>
 </div>
