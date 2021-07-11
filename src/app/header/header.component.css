@@ -7,9 +7,18 @@
 li { margin: 0; }
 
 .logo-a:hover {
-  transform: rotate(360deg);
+  animation: spin 300ms linear;
   background: var(--yellow);
   border-radius: 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
 
 

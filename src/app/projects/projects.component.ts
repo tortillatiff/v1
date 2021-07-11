@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, Output, EventEmitter, Host } from '@angular/core';
+import { Component, HostListener, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-projects',

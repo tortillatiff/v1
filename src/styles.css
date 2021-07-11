@@ -115,7 +115,7 @@ li {
   color: white;
 }
 
-.hover-underline-animation {
+/* .hover-underline-animation {
   display: inline-block;
   width: fit-content;
   position: relative;
@@ -137,7 +137,7 @@ li {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+} */
 
 .proj-wrap {
   padding: 0 24px;
