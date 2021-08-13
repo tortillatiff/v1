@@ -94,16 +94,16 @@
         <h2 class="purple-font" style="margin-bottom: 40px;">skills</h2>
         <div class="row m-0">
           <div class="col-md-6 mb-3 mb-md-0 p-0 pr-md-5 pl-0 justify-content-between">
-            <h3 class="mb-3">Development</h3>
-            <div class="w-100 d-flex justify-content-between align-items-center">
+            <h3 class="mb-3">Dev</h3>
+            <div class="w-100 d-flex justify-content-between align-items-start">
               <div>
                 <ng-container *ngFor="let skill of skills[0].data; let i = index">
-                  <p *ngIf="i < 5">{{ skill }}</p>
+                  <p *ngIf="i < 7">{{ skill }}</p>
                 </ng-container>
               </div>
               <div>
                 <ng-container *ngFor="let skill of skills[0].data; let i = index">
-                  <p *ngIf="i >= 5">{{ skill }}</p>
+                  <p *ngIf="i >= 7">{{ skill }}</p>
                 </ng-container>
               </div>
             </div>

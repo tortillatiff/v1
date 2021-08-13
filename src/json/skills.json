@@ -1,7 +1,7 @@
 [
   {
     "category": "Development",
-    "data": ["HTML/CSS", "Angular", "NodeJS", "MySQL", "Flutter", "Javascript", "Typescript", "Java", "git", "Bootstrap"]
+    "data": ["HTML/CSS", "React", "Angular", "NodeJS", "Express", "MongoDB", "MySQL", "Flutter", "Javascript", "Typescript", "Java", "git", "Bootstrap"]
   },
   {
     "category": "Design",
