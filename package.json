@@ -1,6 +1,6 @@
 {
   "name": "tiffany-website",
-  "homepage": "www.nottiffchan.com",
+  "homepage": "https://github.com/nottiffchan/nottiffchan.com",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
